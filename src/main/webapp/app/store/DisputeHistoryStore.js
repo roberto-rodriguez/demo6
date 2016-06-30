@@ -1,9 +1,5 @@
-Ext.define('DemoExtJs.store.DisputeHistoryStore',
-{
-    extend: 'Ext.data.Store',
+Ext.define('DemoExtJs.store.DisputeHistoryStore',{
+    extend: 'DemoExtJs.base.BaseStore',
     model: 'DemoExtJs.model.DisputeHistoryModel',
-    autoLoad: true,
-    autoSync: false,
-    storeId: 'DisputeHistory',
-    pageSize: 8
+    storeId: 'DisputeHistoryStore'
 });

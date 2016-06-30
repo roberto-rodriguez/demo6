@@ -8,9 +8,9 @@ Ext.define('DemoExtJs.view.Viewport', {
         'DemoExtJs.view.auth.AuthForm',
         'DemoExtJs.view.main.MainView',
         'DemoExtJs.view.main.pages.accountManagement.AccountManagementView',
-        'DemoExtJs.view.main.pages.orderManagement.OrderManagementView',
-        'DemoExtJs.view.main.pages.profileManagement.ProfileManagementView',
-        'DemoExtJs.view.main.pages.billingInvoices.BillingInvoicesView'
+        'DemoExtJs.view.main.pages.order.OrderView',
+        'DemoExtJs.view.main.pages.profile.ProfileManagementView',
+        'DemoExtJs.view.main.pages.billing.BillingView'
     ],
 
     layout: {

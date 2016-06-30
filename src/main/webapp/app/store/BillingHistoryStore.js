@@ -1,9 +1,5 @@
-Ext.define('DemoExtJs.store.BillingHistoryStore',
-{
-    extend: 'Ext.data.Store',
+Ext.define('DemoExtJs.store.BillingHistoryStore',{
+    extend: 'DemoExtJs.base.BaseStore',
     model: 'DemoExtJs.model.BillingHistoryModel',
-    autoLoad: true,
-    autoSync: false,
-    storeId: 'BillingHistory',
-    pageSize: 8
+    storeId: 'BillingHistoryStore'
 });

@@ -1,9 +1,9 @@
 Ext.define('DemoExtJs.view.main.MainCardView', {
     extend: 'Ext.container.Container',
     requires: [
-       'DemoExtJs.view.main.pages.orderManagement.OrderManagementView',
-       'DemoExtJs.view.main.pages.profileManagement.ProfileManagementView',
-       'DemoExtJs.view.main.pages.billingInvoices.BillingInvoicesView',
+       'DemoExtJs.view.main.pages.order.OrderView',
+       'DemoExtJs.view.main.pages.profile.ProfileManagementView',
+       'DemoExtJs.view.main.pages.billing.BillingView',
        'DemoExtJs.view.main.pages.accountManagement.AccountManagementView'
     ],
     alias: 'widget.mainCardView',
@@ -13,7 +13,7 @@ Ext.define('DemoExtJs.view.main.MainCardView', {
     
     items: [
         {
-            xtype:'billingInvoicesView',
+            xtype:'billingView',
             flex:1
         },
         {
@@ -27,7 +27,7 @@ Ext.define('DemoExtJs.view.main.MainCardView', {
         },
         
         {
-            xtype:'orderManagementView',
+            xtype:'orderView',
             flex:1
         }
     ]

@@ -1,7 +1,5 @@
-Ext.define('DemoExtJs.model.DisputeHistoryModel', 
-{
-    extend : 'Ext.data.Model',
-    idProperty : 'Id',
+Ext.define('DemoExtJs.model.DisputeHistoryModel', {
+    extend: 'DemoExtJs.base.BaseModel',
     fields: [
         { name: 'Id', type: 'int', defaultValue: 0 },
         { name: 'disputeDate', type: 'date' },
@@ -13,14 +11,8 @@ Ext.define('DemoExtJs.model.DisputeHistoryModel',
         { name: 'submittedBy', type: 'string' },
         { name: 'status', type: 'string' }
     ],
-    validations : [{
-//        type : 'presence',
-//        field : 'accountName'
-    }],
-   proxy : 
-    {
+   proxy :{
         type : 'ajax',
-       
         api : 
         {
             read: '/Demo6/api/billing/disputeHistory'

@@ -1,4 +1,4 @@
-Ext.define('DemoExtJs.view.main.pages.profileManagement.ProfileManagementView', {
+Ext.define('DemoExtJs.view.main.pages.profile.ProfileManagementView', {
     extend: 'Ext.container.Container',
     alias: 'widget.accountManagementView',
     xtype: 'profileManagementView',
