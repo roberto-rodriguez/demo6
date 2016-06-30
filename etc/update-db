@@ -1,0 +1,39 @@
+ 
+ALTER TABLE activity DROP COLUMN id;
+
+ALTER TABLE activity RENAME COLUMN id_activity TO id;
+
+ALTER TABLE activity RENAME COLUMN usser TO id_user;
+
+ALTER TABLE activity RENAME COLUMN campaign TO id_campaign;
+
+ALTER TABLE campaign RENAME COLUMN creator TO id_user_creator;
+
+ALTER TABLE campaign_user RENAME COLUMN campaign TO id_campaign;
+
+ALTER TABLE campaign_user RENAME COLUMN usuario TO id_user;
+
+ALTER TABLE detail RENAME COLUMN id_detail TO id;
+
+ALTER TABLE privilege DROP COLUMN id;
+
+ALTER TABLE privilege RENAME COLUMN id_privilege TO id;
+
+ALTER TABLE role RENAME COLUMN id_role TO id;
+
+ALTER TABLE role_privilege RENAME COLUMN id_role_privilege TO id;
+
+ALTER TABLE role_privilege RENAME COLUMN privilege TO id_privilege;
+
+ALTER TABLE role_privilege RENAME COLUMN role TO id_role;
+
+ALTER TABLE usuario RENAME COLUMN role TO id_role;
+
+DROP TABLE "meeting";
+
+ALTER TABLE campaign
+  ADD FOREIGN KEY (id_user_creator) REFERENCES usuario (id) ON UPDATE NO ACTION ON DELETE NO ACTION;
+
+ ALTER TABLE campaign ADD UNIQUE (secure_code);
+
+ ALTER TABLE usuario ADD UNIQUE (usser);
