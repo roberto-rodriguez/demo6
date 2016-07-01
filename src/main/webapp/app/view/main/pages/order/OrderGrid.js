@@ -17,7 +17,7 @@ Ext.define('DemoExtJs.view.main.pages.order.OrderGrid', {
                 },
                 {
                     text: "", //TODO checkbock here
-                    width: '3.6%',
+                    width: '3%',
                     align: 'center'
                 },
                 {
@@ -33,7 +33,7 @@ Ext.define('DemoExtJs.view.main.pages.order.OrderGrid', {
                 },
                 {
                     text: "Ref#",
-                    width: '6%',
+                    width: '6.6%',
                     dataIndex: 'refNumber',
                     align: 'center'
                 },

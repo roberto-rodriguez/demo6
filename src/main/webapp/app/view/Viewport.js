@@ -9,7 +9,7 @@ Ext.define('DemoExtJs.view.Viewport', {
         'DemoExtJs.view.main.MainView',
         'DemoExtJs.view.main.pages.accountManagement.AccountManagementView',
         'DemoExtJs.view.main.pages.order.OrderView',
-        'DemoExtJs.view.main.pages.profile.ProfileManagementView',
+        'DemoExtJs.view.main.pages.profile.ProfileView',
         'DemoExtJs.view.main.pages.billing.BillingView'
     ],
 

@@ -16,6 +16,8 @@ Ext.define('DemoExtJs.Application', {
     stores: [
         'DemoExtJs.store.BillingHistoryStore',
         'DemoExtJs.store.DisputeHistoryStore',
-        'DemoExtJs.store.OrderStore'
+        'DemoExtJs.store.OrderStore',
+        'DemoExtJs.store.ProfileStore',
+        'DemoExtJs.store.PrivilegeStore'
     ]
 });
