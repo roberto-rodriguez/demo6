@@ -7,7 +7,7 @@ Ext.define('DemoExtJs.view.Viewport', {
         'DemoExtJs.view.BaseView',
         'DemoExtJs.view.auth.AuthForm',
         'DemoExtJs.view.main.MainView',
-        'DemoExtJs.view.main.pages.accountManagement.AccountManagementView',
+        'DemoExtJs.view.main.pages.account.AccountView',
         'DemoExtJs.view.main.pages.order.OrderView',
         'DemoExtJs.view.main.pages.profile.ProfileView',
         'DemoExtJs.view.main.pages.billing.BillingView'

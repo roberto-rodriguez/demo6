@@ -4,7 +4,7 @@ Ext.define('DemoExtJs.view.main.MainCardView', {
        'DemoExtJs.view.main.pages.order.OrderView',
        'DemoExtJs.view.main.pages.profile.ProfileView',
        'DemoExtJs.view.main.pages.billing.BillingView',
-       'DemoExtJs.view.main.pages.accountManagement.AccountManagementView'
+       'DemoExtJs.view.main.pages.account.AccountView'
     ],
     alias: 'widget.mainCardView',
     layout: {
@@ -13,7 +13,7 @@ Ext.define('DemoExtJs.view.main.MainCardView', {
     
     items: [
         {
-           xtype:'accountManagementView',
+           xtype:'accountView',
             flex:1
         },
         {

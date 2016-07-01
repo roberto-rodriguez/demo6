@@ -9,6 +9,60 @@
 @import 'ext/resources/ext-theme-gray/ext-theme-gray-all.css';
 /*@import 'ext/resources/css/ext-all.css';*/
 
+.goButton{
+    background: url("/Demo6/resources/images/goBtn.gif") !important;
+    width: 42px;
+    height: 21px;
+    margin-bottom:10px;
+}
+
+.innerPageHeading {
+    font-size: 16px;
+    font-family: Arial;
+    color: #0066CC;
+    font-weight: bold;
+}
+
+.innerPageSub {
+    width:174px;
+    height:92px;
+/*    margin: 10px;*/
+    font-family: Verdana;
+    font-size: 11px;
+    color: #666666;
+}
+
+/*.innerPageSub{
+    width:174px;
+}*/
+
+body{
+    color: #666;
+    font-family: verdana, arial, helvetica, sans-serif;
+    font-size: 62.5%;
+    line-height: 1.5em;
+}
+
+h1,h2,p,hr{
+    color: #666;
+}
+
+
+#messageBoard {
+    margin: 0px 0px 0px 10px;
+    background-image: url("/Demo6/resources/images/blue_background.gif");
+    background-repeat: no-repeat;
+}
+
+#scrollBoard {
+    width: 400px;
+    height: 210px;
+    padding: 10px 0px 10px 15px;
+    position: relative;
+    overflow: auto;
+    overflow-x: hidden;
+}
+
 /*.x-panel-body-default {*/
 .x-panel-body{
     border:none;
