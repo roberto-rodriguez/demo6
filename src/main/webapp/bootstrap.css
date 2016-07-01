@@ -9,6 +9,10 @@
 @import 'ext/resources/ext-theme-gray/ext-theme-gray-all.css';
 /*@import 'ext/resources/css/ext-all.css';*/
 
+//-- MENU -------
+
+//---------------
+
 .goButton{
     background: url("/Demo6/resources/images/goBtn.gif") !important;
     width: 42px;
@@ -16,6 +20,7 @@
     margin-bottom:10px;
 }
 
+// Acount Management Page
 .innerPageHeading {
     font-size: 16px;
     font-family: Arial;
@@ -24,29 +29,12 @@
 }
 
 .innerPageSub {
-    width:174px;
-    height:92px;
-/*    margin: 10px;*/
+    width: 155px;
+    height:92px; 
     font-family: Verdana;
     font-size: 11px;
     color: #666666;
 }
-
-/*.innerPageSub{
-    width:174px;
-}*/
-
-body{
-    color: #666;
-    font-family: verdana, arial, helvetica, sans-serif;
-    font-size: 62.5%;
-    line-height: 1.5em;
-}
-
-h1,h2,p,hr{
-    color: #666;
-}
-
 
 #messageBoard {
     margin: 0px 0px 0px 10px;
@@ -62,6 +50,21 @@ h1,h2,p,hr{
     overflow: auto;
     overflow-x: hidden;
 }
+
+/*---------------------------*/
+
+body{
+    color: #666;
+    font-family: verdana, arial, helvetica, sans-serif;
+    font-size: 62.5%;
+    line-height: 1.5em;
+}
+
+h1,h2,p,hr{
+    color: #666;
+}
+
+
 
 /*.x-panel-body-default {*/
 .x-panel-body{

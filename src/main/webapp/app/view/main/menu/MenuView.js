@@ -1,31 +1,45 @@
 Ext.define('DemoExtJs.view.main.menu.MenuView', {
-    alias:'widget.menuView',
-    extend : 'Ext.form.Panel',
+    extend: 'Ext.form.Panel',
+    alias: 'widget.menuView',
     layout: 'vbox',
-    requiers:[
+    requiers: [
     ],
-//    width:'100%',
-    defaults:{
-        width:'100%'
+    defaults: {
+        width: '100%'
     },
     items: [
         {
-          html:'<b>Customer Login</b>'
+            html: '<b>Customer Login</b>'
         },
         {
-            xtype:'button',
-            itemId:'menuProfileManagement',
-            text:'Profile Management'
+            xtype: 'menuOption',
+            itemId: 'menuProfileManagement',
+            text: '<div style="font-size:13px;color: #959595; padding-left: 10px;  display: block;text-decoration: none;text-align: left;background:url(&quot;/Demo6/resources/images/menuArrow.gif&quot;) no-repeat 1px 6px;">' +
+                    'Profile Management</div>',
         },
         {
-            xtype:'button',
-            itemId:'menuBillingInvoices',
-            text:'Billing & Invoices'
+            xtype: 'menuOption',
+            itemId: 'menuBillingInvoices',
+            text: '<div style="font-size:13px;color: #959595; padding-left: 10px;  display: block;text-decoration: none;text-align: left;background:url(&quot;/Demo6/resources/images/menuArrow.gif&quot;) no-repeat 1px 6px;">' +
+                    'Billing & Invoices</div>',
         },
         {
-            xtype:'button',
-            itemId:'menuOrderManagement',
-            text:'Order Management'
+            xtype: 'menuOption',
+            itemId: 'menuOrderManagement',
+            text: '<div style="font-size:13px;color: #959595; padding-left: 10px;  display: block;text-decoration: none;text-align: left;background:url(&quot;/Demo6/resources/images/menuArrow.gif&quot;) no-repeat 1px 6px;">' +
+                    'Order Management</div>',
         }
     ]
+});
+
+Ext.define('DemoExtJs.view.main.menu.MenuOption', {
+    extend: 'Ext.Button',
+    alias: 'widget.menuOption',
+    cls: 'menuOption',
+    style: {
+        'background-image': 'none',
+        'background-color': 'white',
+        'border': 'none',
+        'color': 'red'
+    }
 });

@@ -40,7 +40,7 @@ Ext.define('DemoExtJs.view.main.pages.account.AccountView', {
         },
         {
             html: '<div>' +
-                    '<h2>Manage Your Acount</h2>' +
+                    '<h2>Manage Your Account</h2>' +
                     '<hr style="width:760px">' +
                     '</div>'
         },
@@ -51,7 +51,7 @@ Ext.define('DemoExtJs.view.main.pages.account.AccountView', {
                     xtype: 'accountBox',
                     items: [
                         {
-                            html: '<div class="acctMgmtSpots_sq">' +
+                            html: '<div>' +
                                     '<p class="innerPageHeading">Profile Management</p>' +
                                     '<p class="innerPageSub">Review your accounts and manage user access.</p>' +
                                     '</div>'
@@ -64,7 +64,7 @@ Ext.define('DemoExtJs.view.main.pages.account.AccountView', {
                     xtype: 'accountBox',
                     items: [
                         {
-                            html: '<div class="acctMgmtSpots_sq">' +
+                            html: '<div>' +
                                     '<p class="innerPageHeading">Billing & Invoices</p>' +
                                     '<p class="innerPageSub">View and download monthly invoices or submit a billing inquiry.</p>' +
                                     '</div>'
@@ -77,7 +77,7 @@ Ext.define('DemoExtJs.view.main.pages.account.AccountView', {
                     xtype: 'accountBox',
                     items: [
                         {
-                            html: '<div class="acctMgmtSpots_sq">' +
+                            html: '<div>' +
                                     '<p class="innerPageHeading">Order Management</p>' +
                                     '<p class="innerPageSub">Submit an order, track your order status or view a history of orders.</p>' +
                                     '</div>'
@@ -90,7 +90,7 @@ Ext.define('DemoExtJs.view.main.pages.account.AccountView', {
                     xtype: 'accountBox',
                     items: [
                         {
-                            html: '<div class="acctMgmtSpots_sq">' +
+                            html: '<div>' +
                                     '<p class="innerPageHeading">Profile Management</p>' +
                                     '<p class="innerPageSub">Review your accounts and manage user access.</p>' +
                                     '</div>'
