@@ -33,13 +33,8 @@ Ext.define('DemoExtJs.view.main.pages.order.OrderView', {
             ]
         },
         {
-            width: '90%',
-            height: 450,
-            items: [
-                {
-                    xtype: 'orderGrid'
-                }
-            ]
+            xtype: 'orderGrid',
+            width: '100%'
         }
     ]
 });

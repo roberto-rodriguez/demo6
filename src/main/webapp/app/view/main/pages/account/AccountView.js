@@ -7,7 +7,7 @@ Ext.define('DemoExtJs.view.main.pages.account.AccountView', {
     ],
     items: [
         {
-            html: '<br><h1>Account Management</h1><br>',
+            html: '<h1 style="font-size:22px; margin:0px 0px 10px 0px; padding:0px">Account Management</h1>',
             width: '100%'
         },
         {
@@ -40,7 +40,7 @@ Ext.define('DemoExtJs.view.main.pages.account.AccountView', {
         },
         {
             html: '<div>' +
-                    '<h2>Manage Your Account</h2>' +
+                    '<h2 style="font-size:14px;margin: 10px 0 5px 0;">Manage Your Account</h2>' +
                     '<hr style="width:760px">' +
                     '</div>'
         },
@@ -52,7 +52,7 @@ Ext.define('DemoExtJs.view.main.pages.account.AccountView', {
                     items: [
                         {
                             html: '<div>' +
-                                    '<p class="innerPageHeading">Profile Management</p>' +
+                                    '<p style="font-size: 16px;font-family: Arial;color: #0066CC;font-weight: bold;">Profile Management</p>' +
                                     '<p class="innerPageSub">Review your accounts and manage user access.</p>' +
                                     '</div>'
                         },
@@ -65,7 +65,7 @@ Ext.define('DemoExtJs.view.main.pages.account.AccountView', {
                     items: [
                         {
                             html: '<div>' +
-                                    '<p class="innerPageHeading">Billing & Invoices</p>' +
+                                    '<p style="font-size: 16px;font-family: Arial;color: #0066CC;font-weight: bold;">Billing & Invoices</p>' +
                                     '<p class="innerPageSub">View and download monthly invoices or submit a billing inquiry.</p>' +
                                     '</div>'
                         },
@@ -78,7 +78,7 @@ Ext.define('DemoExtJs.view.main.pages.account.AccountView', {
                     items: [
                         {
                             html: '<div>' +
-                                    '<p class="innerPageHeading">Order Management</p>' +
+                                    '<p style="font-size: 16px;font-family: Arial;color: #0066CC;font-weight: bold;">Order Management</p>' +
                                     '<p class="innerPageSub">Submit an order, track your order status or view a history of orders.</p>' +
                                     '</div>'
                         },
@@ -91,7 +91,7 @@ Ext.define('DemoExtJs.view.main.pages.account.AccountView', {
                     items: [
                         {
                             html: '<div>' +
-                                    '<p class="innerPageHeading">Profile Management</p>' +
+                                    '<p style="font-size: 16px;font-family: Arial;color: #0066CC;font-weight: bold;">Profile Management</p>' +
                                     '<p class="innerPageSub">Review your accounts and manage user access.</p>' +
                                     '</div>'
                         },

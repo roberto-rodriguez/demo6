@@ -4,12 +4,17 @@ Ext.define('DemoExtJs.view.main.menu.MenuView', {
     layout: 'vbox',
     requiers: [
     ],
+    height:'100%',
+    style: {
+        'border-right': '1px dotted #666666;',
+        'padding-right':'0px'
+    },
     defaults: {
         width: '100%'
     },
     items: [
         {
-            html: '<b>Customer Login</b>'
+            html: '<h3 class="menuheader expandable" headerindex="0h"><span class="accordprefix"></span><a href="">Customer Login</a><span class="accordsuffix"></span></h3>'
         },
         {
             xtype: 'menuOption',

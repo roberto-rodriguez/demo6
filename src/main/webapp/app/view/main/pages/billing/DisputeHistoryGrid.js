@@ -14,7 +14,7 @@ Ext.define('DemoExtJs.view.main.pages.billing.DisputeHistoryGrid', {
                 },
                 {
                     text: "Dispute Date",
-                    width: '12.3%',
+                    width: '11.7%',
                     dataIndex: 'disputeDate',
                     align: 'center',
                     renderer: Ext.util.Format.dateRenderer('d-m-Y')

@@ -33,7 +33,7 @@ Ext.define('DemoExtJs.view.main.pages.order.OrderGrid', {
                 },
                 {
                     text: "Ref#",
-                    width: '6.6%',
+                    width: '6%',
                     dataIndex: 'refNumber',
                     align: 'center'
                 },

@@ -20,7 +20,7 @@ Ext.define('DemoExtJs.view.main.pages.profile.PrivilegeGrid', {
                 {
                     text: "Organization Name", 
                     dataIndex: 'organizationName',
-                    width: '40%'
+                    width: '39%'
                 },
                 {
                     text: "Admin",

@@ -17,7 +17,7 @@ Ext.define('DemoExtJs.view.main.pages.profile.ProfileGrid', {
                 },
                 {
                     text: "", //TODO checkbock here
-                    width: '3.8%',
+                    width: '3%',
                     align: 'center'
                 },
                 {

@@ -1,21 +1,24 @@
 Ext.define('DemoExtJs.view.BaseView', {
-    extend: 'Ext.container.Container',
+    extend: 'Ext.panel.Panel',
     alias: 'widget.baseView',
     collapsible: false,
     frame: false,
     layout: 'border',
     border: false,
     requires: [
-        'DemoExtJs.view.CardView'
+        'DemoExtJs.view.CardView',
+        'DemoExtJs.view.common.Header'
     ],
     items: [
         {
             region: 'north',
-            height: 100,
-            minHeight: 100
-        }, {
+            xtype:'topheader'
+        },
+        {
             region: 'center',
-            xtype  : 'cardView'
+            xtype  : 'cardView',
+            
+            flex:1
         }
     ]
 });

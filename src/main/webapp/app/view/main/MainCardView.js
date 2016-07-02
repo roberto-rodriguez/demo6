@@ -7,27 +7,28 @@ Ext.define('DemoExtJs.view.main.MainCardView', {
        'DemoExtJs.view.main.pages.account.AccountView'
     ],
     alias: 'widget.mainCardView',
+    style:{
+      padding:'0px'  
+    },
     layout: {
         type: 'card'
     },
-    
+    defaults:{
+        flex:1
+    },
     items: [
         {
-           xtype:'accountView',
-            flex:1
+           xtype:'accountView'
         },
         {
-            xtype:'profileView',
-            flex:1
+            xtype:'profileView'
         },
         {
-            xtype:'billingView',
-            flex:1
+            xtype:'billingView'
         },
         
         {
-            xtype:'orderView',
-            flex:1
+            xtype:'orderView'
         }
     ]
 });

@@ -14,7 +14,7 @@ Ext.define('DemoExtJs.view.main.pages.billing.BillingHistoryGrid', {
                             },
                             {
                                 text: "Invoice Date",
-                                width:'19.9%',
+                                width:'19.5%',
                                 dataIndex: 'invoiceDate',
                                 align: 'center',
                                 renderer: Ext.util.Format.dateRenderer('d-m-Y')
