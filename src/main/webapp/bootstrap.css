@@ -13,18 +13,96 @@
 /*@font-face{font-family:'gothammedium';src:url("/Demo6/resources/fonts/gotham-medium-webfont.eot");src:url("/Demo6/resources/fonts/gotham-medium-webfont.eot?#iefix") format("embedded-opentype"),url("/Demo6/resources/fonts/gotham-medium-webfont.woff2") format("woff2"),url("/Demo6/resources/fonts/gotham-medium-webfont.woff") format("woff"),url("/Demo6/resources/fonts/gotham-medium-webfont.ttf") format("truetype"),url("/Demo6/resources/fonts/gotham-medium-webfont.svg#gothammedium") format("svg");font-weight:normal;font-style:normal}*/
 @font-face{font-family:'gotham-boldbold';src:url("/Demo6/resources/fonts/gotham-bold-webfont.eot");src:url("/Demo6/resources/fonts/gotham-bold-webfont.eot?#iefix") format("embedded-opentype"),url("/Demo6/resources/fonts/gotham-bold-webfont.woff") format("woff"),url("/Demo6/resources/fonts/gotham-bold-webfont.ttf") format("truetype"),url("/Demo6/resources/fonts/gotham-bold-webfont.svg#/Demo6/resources/fonts/gotham-boldbold") format("svg");font-weight:normal;font-style:normal}  //,url("/Demo6/resources/fonts/gotham-bold-webfont.woff2") format("woff2")
 
-.footer__bar{
-    /*color: #51534a;*/
-    /*font-family: "gothambook";*/
-    font-size: 14px;
-/*    left: 0;
-    line-height: 24px;
-    min-width: 320px;
-    overflow-x: hidden;
-    position: relative;
-    transition: all 300ms ease 0s;
-    text-align: right;*/
+//------------ Login page
+
+//important both rules are needed here
+.loginRequiredLabel #panel-1034-body{
+    background-color:transparent!important;
 }
+.loginRequiredLabel>div{
+    background-color:transparent!important;
+}
+
+.x-form-item-label{
+    margin-bottom:4px!important;
+}
+.x-form-item-label-top{
+    margin-bottom:4px!important;
+}
+
+
+
+.slider--wrapper img {
+    width: 100%;
+}
+
+img {
+    max-width: 100%;
+    height: auto;
+    vertical-align: middle;
+    border: 0;
+}
+
+.slider--wrapper li {
+    float: left;
+    list-style: none;
+    position: relative;
+    padding: 0;
+    margin: 0;
+    width: 100%;
+    display: block;
+} 
+
+.blue-subheader .x-panel-body-default{
+    background-color: rgb(0, 150, 214);
+}
+
+.content__row {
+    max-width: 1000px;
+    margin: 0 auto;
+    width: 100%;
+    position: relative;
+    font-family: 'gotham-boldbold';
+}
+
+.breadcrumb {
+    background: none;
+    padding: 0;
+    margin: 0;
+    border-radius: 0;
+    font-size: 14px;
+    line-height:45px;
+}
+
+.text--uppercase {
+    text-transform: uppercase;
+}
+
+.color--white {
+    color: #fff;
+}
+
+.section--breadcrumb a {
+    font-family: 'gothammedium';
+}
+.color--white a {
+    color: #fff;
+    text-decoration:none;
+}
+
+.col-xs-7{
+    font-family: "gothambook";
+    font-size: 16px;
+    line-height: 24px;
+    color: #333;
+}
+
+strong, b {
+    font-family: 'gotham-boldbold' !important;
+    color: #333;
+}
+
+//-----------------  footer
 
 .footer__nav{
     margin: 20px 0;    
@@ -122,7 +200,7 @@
     top: 32px;
     color: #7ac142;
     font-size: 16px;
-    line-height:100px;
+    line-height:90px;
     font-weight:bold;
 }
 
@@ -141,6 +219,13 @@
     background: url("/Demo6/resources/images/goBtn.gif") !important;
     width: 42px;
     height: 21px;
+    margin-bottom:0px!important;
+}
+
+.loginButton{
+    background: url("/Demo6/resources/images/loginBtn.gif") !important;
+    width: 85px;
+    height: 22px;
     margin-bottom:0px!important;
 }
 
@@ -244,6 +329,7 @@ h1,h2,p,hr{
     border-width: 1px;
     border-style: solid;
     margin-top:20px;
+    padding-bottom:20px;
 }
 
 //icon image stuff
@@ -280,4 +366,4 @@ h1,h2,p,hr{
     box-sizing: inherit;
 }
 
-*/*/
+*/

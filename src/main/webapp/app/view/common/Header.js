@@ -2,7 +2,7 @@ Ext.define('DemoExtJs.view.common.Header', {
     extend: 'Ext.panel.Panel',
     alias: 'widget.topheader',
     layout: 'vbox',
-    height: 80,
+    height:70,
     requires: [
     ],
     items: [
@@ -12,9 +12,11 @@ Ext.define('DemoExtJs.view.common.Header', {
             items: [
                 {
                     xtype: 'image',
-                    src: '/Demo6/resources/images/logo.gif',
-                    height: 99,
-                    width: 150
+//                    src: 'http://www.fplfibernet.com/fplcommon/images/icons/logo.svg',
+                    src: '/Demo6/resources/images/logo2.png',
+                    height: 60,
+                    width: 150,
+                    margin:'3px 0px 0px 13px'
                 },
                 {
                     flex:1

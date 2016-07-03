@@ -19,7 +19,7 @@ Ext.define('DemoExtJs.view.main.menu.Footer', {
             width: 700,
             html: '<br><br>' +
                     '<div style="height:200px;font-size: 14px;line-height: 24px;color: #51534a;";margin: 20px;">' +
-                    '<ul class="footer__nav">' +
+                    '<ul class="footer__nav" style="text-align:right">' +
                     '<li><a target="_self" href="">A NextEra Energy Company</a></li>' +
                     '<li><a target="_self" href="">Sitemap</a></li>' +
                     '<li><a target="_self" href="">Terms &amp; Conditions</a></li>' +

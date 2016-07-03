@@ -6,7 +6,6 @@ Ext.define('DemoExtJs.view.main.pages.profile.ProfileTabPanel', {
         'DemoExtJs.view.main.pages.profile.PrivilegeGrid',
         'DemoExtJs.component.AccountSearch'
     ],
-    height: 685,
     items: [
         {
             title: 'ACOUNT PROFILES',

@@ -18,11 +18,14 @@ Ext.define('DemoExtJs.view.main.MainCardView', {
     },
     items: [
         {
-           xtype:'accountView'
-        },
-        {
             xtype:'profileView'
         },
+        {
+           xtype:'accountView'
+        },
+//        {
+//            xtype:'profileView'
+//        },
         {
             xtype:'billingView'
         },
