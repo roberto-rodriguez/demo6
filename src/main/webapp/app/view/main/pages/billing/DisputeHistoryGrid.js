@@ -20,7 +20,8 @@ Ext.define('DemoExtJs.view.main.pages.billing.DisputeHistoryGrid', {
                     renderer: Ext.util.Format.dateRenderer('d-m-Y')
                 },
                 {
-                    text: "Reference Number",
+                    text: "Reference #",
+                    align: 'center',
                     dataIndex: 'referenceNumber'
                 },
                 {

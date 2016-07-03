@@ -15,7 +15,7 @@ Ext.define('DemoExtJs.base.BasePagingGrid', {
     frame: true,
     collapsible: true,
     selType: 'rowmodel',
-    style: 'border-collapse: collapse; margin-left:2%; margin-right:2%',
+    style: 'border-collapse: collapse; margin-left:2%; margin-right:2%;',
     selModel:{
                 mode: 'SINGLE'
             },
@@ -35,8 +35,11 @@ Ext.define('DemoExtJs.base.BasePagingGrid', {
                         xtype: 'pagingtoolbar',
                         store: me.getStore(),
                         displayInfo: true,
-                        displayMsg: 'Displaying {0} to {1} of {2} &nbsp;records ',
-                        emptyMsg: "No records to display&nbsp;"
+                        displayMsg: 'View {0} - {1} of {2}',
+                        emptyMsg: "No records to display&nbsp;",
+                        style:{
+                            color:'#555555'
+                        }
                     }
                 });
         this.callParent(arguments);

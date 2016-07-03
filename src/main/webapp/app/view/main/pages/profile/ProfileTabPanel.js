@@ -22,11 +22,11 @@ Ext.define('DemoExtJs.view.main.pages.profile.ProfileTabPanel', {
             title: 'MY PROFILE',
             items: [
                 {
-                   html:'<div id="myProfile">' + 
-                           '<h1>Contact Information</h1>' +
-                           '<hr> <br>' +
+                   html:'<div style="padding:5px 15px; color: #525252;">' + 
+                           '<h3 style="font-weight: bold;font-size: 14px;margin: 5px 0;color: #0066cc;">Contact Information</h3>' +
+                           '<hr>' +
                            '<table>' + 
-                           '<tr><td>First Name:</td><td>Edward</td></tr>' +
+                           '<tr><td style="width:109px">First Name:</td><td>Edward</td></tr>' +
                            '<tr><td>Last Name:</td><td>Beckett</td></tr>' +
                            '<tr><td>User ID (Email):</td><td>Edward.Beckett@fpl.com</td></tr>' +
                            '<tr><td>Phone:</td><td>754-551-0470</td></tr>' +
@@ -37,8 +37,8 @@ Ext.define('DemoExtJs.view.main.pages.profile.ProfileTabPanel', {
                            '<tr><td>State:</td><td>FL</td></tr>' +
                            '<tr><td>Zip Code:</td><td>33174</td></tr>' +
                            '<tr><td>Country:</td><td>United States</td></tr>' +
-                           '</table>' +
-                           '<h1>Privileges</h1>' +
+                           '</table> <br>' +
+                           '<h3 style="font-weight: bold;font-size: 14px;margin: 5px 0;color: #0066cc;">Privileges</h3>' +
                            '<hr> ' 
                 },
                 {

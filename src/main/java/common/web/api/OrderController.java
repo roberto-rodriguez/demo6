@@ -85,7 +85,7 @@ class Order{
         this.id = id;
         this.pd = id + "";
         this.modify = true + "";
-        this.refNumber = (1000 + id) + "";
+        this.refNumber = (80 + id) + "";
         this.status = "Active";
         this.expectedId = (10 + id) + "";
         this.productType = "Type " + id;

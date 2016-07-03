@@ -18,22 +18,29 @@ Ext.define('DemoExtJs.view.main.MainView', {
     ],
     items: [
         {
+            height: 25,
+            width: '100%',
+            html: ''
+
+        },
+        {
             layout: 'hbox',
             width: '100%',
-//            height: 80,
             items: [
                 {
                     html: '',
                     flex: 1
-                }, {
-                    width: 160
                 },
                 {
-                    width:680,
-                    align:'right',
+                    width: 870,
+                    align: 'right',
                     html: '<div style="text-align:right;">' +
-                            '<p style="margin: 0px;padding: 0px;">Welcome Edward Beckett | <a href="#" onclick="return popupPdf()"> Help</a> | <a href="/fibernet/logout.do"> Logout </a> </p>' +
+                            '<p style="margin: 0px;padding: 0px;">Welcome Edward Beckett | <a href="#" onclick="return popupPdf()"> Help</a> | </p>' +
                             '</div>'
+                }, {
+                    //width:910,
+                    align: 'left',
+                    html: '&nbsp;<a id="logOutLink" style="text-align:left;" href="#"> Logout </a>'
                 }, {
                     html: '',
                     flex: 1
@@ -52,7 +59,7 @@ Ext.define('DemoExtJs.view.main.MainView', {
                     width: 160,
                     xtype: 'menuView'
                 }, {
-                    width: 900,
+                    width: 780,
                     xtype: 'mainCardView'
                 }, {
                     html: '',
@@ -61,7 +68,27 @@ Ext.define('DemoExtJs.view.main.MainView', {
             ]
         },
         {
-            xtype:'footer'
+            xtype: 'footer'
         }
-    ]
+    ],
+    listeners: {
+        activate: function (newActiveItem, container, oldActiveItem, eOpts) {
+            this.onActivate(newActiveItem, container, oldActiveItem, eOpts);
+        },
+//        deactivate: function (oldActiveItem, container, newActiveItem, eOpts) {
+//            this.onDeactivate(newActiveItem, container, oldActiveItem, eOpts);
+//        }
+    },
+    onActivate: function (newActiveItem, mainNavView, oldActiveItem, eOpts) {
+        var me = this;
+        
+        document.getElementById('logOutLink').addEventListener("click",
+        function(){
+            me.onLogOut();
+        }, false);
+    },
+    onLogOut:function(){
+        var me = this;
+        DemoExtJs.APP.fireEvent('logOut', me);
+    }
 });

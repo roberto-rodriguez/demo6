@@ -10,18 +10,11 @@ Ext.define('DemoExtJs.view.CardView', {
     },
     items: [
         {
-            xtype: 'mainView'
-        },
-         {
             xtype: 'authView',
             width: '100%'
         },
-        
-       
-        
-        
-        
-        
-        
+        {
+            xtype: 'mainView'
+        }
     ]
 });

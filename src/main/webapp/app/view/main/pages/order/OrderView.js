@@ -7,7 +7,7 @@ Ext.define('DemoExtJs.view.main.pages.order.OrderView', {
     ],
     items: [
         {
-            html: '<br><h1>Order Management</h1><br>',
+            html: '<h2 style="font-size:14px; margin-bottom: 5px; padding:0px">&nbsp;Order Management</h2>',
             width: '100%'
         },
         {
@@ -17,7 +17,7 @@ Ext.define('DemoExtJs.view.main.pages.order.OrderView', {
             xtype: 'historySearch'
         },
         {
-            html: '<br>clic on the status link to view the status of an order or create a new order by selecting "Create Order".<br><br>',
+            html: '<div style="margin: 10px;">Clic on the status link to view the status of an order or create a new order by selecting "Create Order".</div>',
             width: '100%'
         },
         {
@@ -25,10 +25,10 @@ Ext.define('DemoExtJs.view.main.pages.order.OrderView', {
             items: [
                 {
                     xtype: 'button',
-                    text: 'CREATE ORDER'
+                    cls:'createOrderButton'
                 }, {
                     xtype: 'button',
-                    text: 'COPY ORDER'
+                    cls:'copyOrderButton'
                 }
             ]
         },

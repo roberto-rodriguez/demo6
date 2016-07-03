@@ -16,7 +16,7 @@ Ext.define('DemoExtJs.view.main.menu.Footer', {
             width: 160
         },
         {
-            width: 700,
+            width: 770,
             html: '<br><br>' +
                     '<div style="height:200px;font-size: 14px;line-height: 24px;color: #51534a;";margin: 20px;">' +
                     '<ul class="footer__nav" style="text-align:right">' +

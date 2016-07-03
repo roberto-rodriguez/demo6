@@ -1,19 +1,30 @@
 Ext.define('DemoExtJs.component.AccountSearch', {
     extend: 'Ext.panel.Panel',
     alias: 'widget.accountSearch',
-//    width: '100%',
-//    bodyStyle: 'background-color:white',
+    requires: [
+        'DemoExtJs.component.GoButton'
+    ],
     layout: 'hbox',
-    cls: 'm20',
+    cls: 'm10',
+    defaults: {
+        style: {
+            'margin': '0 10px'
+        }
+    },
     items: [
-        {html: 'Account'},
+        {
+            html: 'Account'
+        },
         {
             xtype: 'combo',
+            cls: 'combo comboW509',
             label: 'Choose one'
         },
         {
-            xtype: 'button',
-            text: 'Go'
+            xtype: 'goButton',
+            style: {
+                'margin-left': '20px'
+            }
         }
     ]
 });

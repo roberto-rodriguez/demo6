@@ -7,14 +7,14 @@ Ext.define('DemoExtJs.view.main.pages.billing.BillingView', {
     ],
     items: [
         {
-            html: '<br><h1>Billing InvoicesView</h1><br>',
+            html: '<h2 style="font-size:14px; margin-bottom: 5px; padding:0px">&nbsp;Billing InvoicesView</h2>',
             width: '100%'
         },
         {
             xtype:'accountSearch'
         },
         {
-            html: '<br>Download and analize your invoice by selecting the invoice you would like to view. click the reference link to view the detail, status and resolution of the billing inquiry.<br><br>',
+            html: 'Download and analize your invoice by selecting the invoice you would like to view. click the reference link to view the detail, status and resolution of the billing inquiry.<br>',
             width: '100%'
         },
         {

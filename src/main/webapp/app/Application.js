@@ -1,6 +1,6 @@
 Ext.define('DemoExtJs.Application', {
     name: 'DemoExtJs',
-
+    appProperty: 'APP',
     extend: 'Ext.app.Application',
 
     views: [
