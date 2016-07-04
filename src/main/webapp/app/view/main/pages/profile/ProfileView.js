@@ -10,18 +10,18 @@ Ext.define('DemoExtJs.view.main.pages.profile.ProfileView', {
             width: '100%'
         },
         {
-            html: 'View current user details and manage, edit or delete user access by selecting the "User Details" option. Select "Add NewUser" on the right of the screen to add a new user under this acount.<br><br>',
+            html: '<div class="text">View current user details and manage, edit or delete user access by selecting the "User Details" option. Select "Add NewUser" on the right of the screen to add a new user under this acount.</div><br>',
             width: '100%'
         },
         {
           xtype:'button',
           style:{
-            background: 'url(/Demo6/resources/images/addNewUser.gif) !important',
+            background: 'url(/resources/images/addNewUser.gif) !important',
             width: '91px',
             height: '22px',
             border: '0px',
-            padding: '0px'
-//            'margin-bottom':'0px!important'
+            padding: '0px',
+            'margin-bottom':'0px!important'
           }
         },
         {

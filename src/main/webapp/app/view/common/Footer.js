@@ -1,4 +1,4 @@
-Ext.define('DemoExtJs.view.main.menu.Footer', {
+Ext.define('DemoExtJs.view.common.Footer', {
     extend: 'Ext.form.Panel',
     alias: 'widget.footer',
     layout: 'hbox',
@@ -26,7 +26,7 @@ Ext.define('DemoExtJs.view.main.menu.Footer', {
                     '<li><a target="_self" href="">Privacy Policy</a></li>' +
                     '<li><a target="_self" href="">Careers</a></li>' +
                     '</ul>' +
-                    '<p style="font-size: 10px !important;text-align: right;">Copyright ©1996 - 2016, FPL FiberNet, LLC.</p>' +
+                    '<p class="copyright">Copyright ©1996 - 2016, FPL FiberNet, LLC.</p>' +
                     '</div>'
         }, {
             flex: 1

@@ -13,7 +13,7 @@ Ext.define('DemoExtJs.view.common.Header', {
                 {
                     xtype: 'image',
 //                    src: 'http://www.fplfibernet.com/fplcommon/images/icons/logo.svg',
-                    src: '/Demo6/resources/images/logo2.png',
+                    src: '/resources/images/logo2.png',
                     height: 60,
                     width: 150,
                     margin:'3px 0px 0px 13px'

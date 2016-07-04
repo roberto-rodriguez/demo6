@@ -8,7 +8,7 @@ Ext.define('DemoExtJs.view.main.pages.account.AccountBox', {
     baseCls: 'x-box',
     style: {
        border: '1px solid #666',
-       'border-radius': '10px',
+       'border-radius': '13px',
        'padding': '0px 10px',
        margin:'10px'
     },

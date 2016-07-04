@@ -13,7 +13,7 @@ Ext.define('DemoExtJs.model.BillingHistoryModel', {
                 type: 'ajax',
                 api:
                         {
-                            read: '/Demo6/api/billing/billingHistory'
+                            read: '/api/billing/billingHistory'
                         },
                 reader:
                         {

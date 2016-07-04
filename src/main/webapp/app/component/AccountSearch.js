@@ -13,7 +13,7 @@ Ext.define('DemoExtJs.component.AccountSearch', {
     },
     items: [
         {
-            html: 'Account'
+            html: '<div style="color: #666;font-family: verdana, arial, helvetica, sans-serif">Account</div>'
         },
         {
             xtype: 'combo',

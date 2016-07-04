@@ -19,7 +19,7 @@ Ext.define('DemoExtJs.model.OrderModel', {
         type : 'ajax',
         api : 
         {
-            read: '/Demo6/api/order/list'
+            read: '/api/order/list'
         },
         reader : 
         {

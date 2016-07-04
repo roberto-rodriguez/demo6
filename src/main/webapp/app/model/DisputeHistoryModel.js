@@ -15,7 +15,7 @@ Ext.define('DemoExtJs.model.DisputeHistoryModel', {
         type : 'ajax',
         api : 
         {
-            read: '/Demo6/api/billing/disputeHistory'
+            read: '/api/billing/disputeHistory'
         },
         reader : 
         {

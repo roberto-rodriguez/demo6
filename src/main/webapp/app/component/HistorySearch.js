@@ -12,7 +12,7 @@ Ext.define('DemoExtJs.component.HistorySearch', {
         }
     },
     items: [
-        {html: 'View History'},
+        {html: '<div style="color: #666;font-family: verdana, arial, helvetica, sans-serif">View History</div>'},
         {
             xtype: 'combo',
             cls:'combo',

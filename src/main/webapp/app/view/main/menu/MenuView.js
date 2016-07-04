@@ -19,19 +19,19 @@ Ext.define('DemoExtJs.view.main.menu.MenuView', {
         {
             xtype: 'menuOption',
             itemId: 'menuProfileManagement',
-            text: '<div style="font-size:13px;color: #959595; padding-left: 10px;  display: block;text-decoration: none;text-align: left;background:url(&quot;/Demo6/resources/images/menuArrow.gif&quot;) no-repeat 1px 6px;">' +
+            text: '<div style="font-size:13px;color: #959595; padding-left: 10px;  display: block;text-decoration: none;text-align: left;background:url(&quot;/resources/images/menuArrow.gif&quot;) no-repeat 1px 6px; font-family: verdana, arial, helvetica, sans-serif;">' +
                     'Profile Management</div>',
         },
         {
             xtype: 'menuOption',
             itemId: 'menuBillingInvoices',
-            text: '<div style="font-size:13px;color: #959595; padding-left: 10px;  display: block;text-decoration: none;text-align: left;background:url(&quot;/Demo6/resources/images/menuArrow.gif&quot;) no-repeat 1px 6px;">' +
+            text: '<div style="font-size:13px;color: #959595; padding-left: 10px;  display: block;text-decoration: none;text-align: left;background:url(&quot;/resources/images/menuArrow.gif&quot;) no-repeat 1px 6px; font-family: verdana, arial, helvetica, sans-serif;">' +
                     'Billing & Invoices</div>',
         },
         {
             xtype: 'menuOption',
             itemId: 'menuOrderManagement',
-            text: '<div style="font-size:13px;color: #959595; padding-left: 10px;  display: block;text-decoration: none;text-align: left;background:url(&quot;/Demo6/resources/images/menuArrow.gif&quot;) no-repeat 1px 6px;">' +
+            text: '<div style="font-size:13px;color: #959595; padding-left: 10px;  display: block;text-decoration: none;text-align: left;background:url(&quot;/resources/images/menuArrow.gif&quot;) no-repeat 1px 6px;font-family: verdana, arial, helvetica, sans-serif;">' +
                     'Order Management</div>',
         }
     ]

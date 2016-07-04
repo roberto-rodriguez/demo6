@@ -18,7 +18,7 @@ Ext.define('DemoExtJs.view.auth.AuthView', {
             html: '<div style="max-height:353px;">' +
                     '<ul style="opacity: 1;overflow: hidden;padding:0px!important;margin:0px!important">' +
                     '<li>' +
-                    '<img src="/Demo6/resources/images/contactus_subhead.jpg" style="width: 100%;    height: auto;" alt="woman on phone">' +
+                    '<img src="/resources/images/contactus_subhead.jpg" style="width: 100%;    height: auto;" alt="woman on phone">' +
                     '<div class="slider__content" style="height: 350px; opacity: 1; top: 0px;">' +
                     '</div>' +
                     '</li>' +
@@ -58,7 +58,7 @@ Ext.define('DemoExtJs.view.auth.AuthView', {
                 {flex: 1},
                 {
                     width:950,
-                    html: '<p><span style="font-size: 44px;color: #7ac142;letter-spacing: -0.25px;text-transform: uppercase;margin-bottom: 30px;line-height: 1.1em;font-family:\"gothamlight\";">' +
+                    html: '<p><span style="font-size: 44px;color: #7ac142;letter-spacing: -0.25px;text-transform: uppercase;margin-bottom: 30px;line-height: 1.1em;font-family:gothamlight;">' +
                             'WELCOME TO YOUR SECURE CUSTOMER PORTAL</span></p>'
                 },
                 {flex: 1}
@@ -110,7 +110,7 @@ Ext.define('DemoExtJs.view.auth.AuthView', {
                     items: [
                         {
                             xtype: 'image',
-                            src: '/Demo6/resources/images/spectrum.png',
+                            src: '/resources/images/spectrum.png',
                             position: 'absolute',
                             bottom: 0,
                             left: 0,
@@ -130,7 +130,7 @@ Ext.define('DemoExtJs.view.auth.AuthView', {
                             '<li><a target="_self" href="">Privacy Policy</a></li>' +
                             '<li><a target="_self" href="">Careers</a></li>' +
                             '</ul>' +
-                            '<p style="font-size: 10px !important;text-align: right;">Copyright ©1996 - 2016, FPL FiberNet, LLC.</p>' +
+                            '<p class="copyright">Copyright ©1996 - 2016, FPL FiberNet, LLC.</p>' +
                             '</div>'
                 }, {
                     flex: 1

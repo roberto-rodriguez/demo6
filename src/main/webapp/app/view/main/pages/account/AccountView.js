@@ -19,7 +19,7 @@ Ext.define('DemoExtJs.view.main.pages.account.AccountView', {
             items: [
                 {
                     xtype: 'image',
-                    src: '/Demo6/resources/images/accountManagement.gif',
+                    src: '/resources/images/accountManagement.gif',
                     height: 165,
                     width: 354
                 },

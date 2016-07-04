@@ -15,6 +15,8 @@ Ext.define('DemoExtJs.view.CardView', {
         },
         {
             xtype: 'mainView'
-        }
+        },
+        
+        
     ]
 });

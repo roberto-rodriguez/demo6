@@ -12,7 +12,7 @@ Ext.define('DemoExtJs.model.PrivilegeModel', {
         type : 'ajax',
         api : 
         {
-            read: '/Demo6/api/privilege/list'
+            read: '/api/privilege/list'
         },
         reader : 
         {

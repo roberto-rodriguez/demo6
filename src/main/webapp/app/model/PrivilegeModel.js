@@ -11,7 +11,7 @@ Ext.define('DemoExtJs.model.ProfileModel', {
         type : 'ajax',
         api : 
         {
-            read: '/Demo6/api/profile/list'
+            read: '/api/profile/list'
         },
         reader : 
         {

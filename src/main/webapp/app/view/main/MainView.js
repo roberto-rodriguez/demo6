@@ -14,7 +14,7 @@ Ext.define('DemoExtJs.view.main.MainView', {
     requires: [
         'DemoExtJs.view.main.menu.MenuView',
         'DemoExtJs.view.main.MainCardView',
-        'DemoExtJs.view.main.menu.Footer'
+        'DemoExtJs.view.common.Footer'
     ],
     items: [
         {
@@ -35,7 +35,8 @@ Ext.define('DemoExtJs.view.main.MainView', {
                     width: 870,
                     align: 'right',
                     html: '<div style="text-align:right;">' +
-                            '<p style="margin: 0px;padding: 0px;">Welcome Edward Beckett | <a href="#" onclick="return popupPdf()"> Help</a> | </p>' +
+                            '<p style="margin: 0px;padding: 0px;color: #666;font-family: verdana, arial, helvetica, sans-serif;">' +
+                            'Welcome Edward Beckett | <a href="#" onclick="return popupPdf()"> Help</a> | </p>' +
                             '</div>'
                 }, {
                     //width:910,

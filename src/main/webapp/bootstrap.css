@@ -10,13 +10,40 @@
 @import 'ext/resources/ext-theme-gray/ext-theme-gray-all.css';
 /*@import 'ext/resources/css/ext-all.css';*/
 
-/*@font-face{font-family:'gothammedium';src:url("/Demo6/resources/fonts/gotham-medium-webfont.eot");src:url("/Demo6/resources/fonts/gotham-medium-webfont.eot?#iefix") format("embedded-opentype"),url("/Demo6/resources/fonts/gotham-medium-webfont.woff2") format("woff2"),url("/Demo6/resources/fonts/gotham-medium-webfont.woff") format("woff"),url("/Demo6/resources/fonts/gotham-medium-webfont.ttf") format("truetype"),url("/Demo6/resources/fonts/gotham-medium-webfont.svg#gothammedium") format("svg");font-weight:normal;font-style:normal}*/
-@font-face{font-family:'gotham-boldbold';src:url("/Demo6/resources/fonts/gotham-bold-webfont.eot");src:url("/Demo6/resources/fonts/gotham-bold-webfont.eot?#iefix") format("embedded-opentype"),url("/Demo6/resources/fonts/gotham-bold-webfont.woff") format("woff"),url("/Demo6/resources/fonts/gotham-bold-webfont.ttf") format("truetype"),url("/Demo6/resources/fonts/gotham-bold-webfont.svg#/Demo6/resources/fonts/gotham-boldbold") format("svg");font-weight:normal;font-style:normal}  //,url("/Demo6/resources/fonts/gotham-bold-webfont.woff2") format("woff2")
+@font-face{
+    font-family:'gotham-boldbold';
+    src:url("/resources/fonts/gotham-bold-webfont.eot");
+    src:url("/resources/fonts/gotham-bold-webfont.eot?#iefix") format("embedded-opentype"),url("/resources/fonts/gotham-bold-webfont.woff") format("woff"),url("/resources/fonts/gotham-bold-webfont.ttf") format("truetype"),url("/resources/fonts/gotham-bold-webfont.svg#/resources/fonts/gotham-boldbold") format("svg");
+    font-weight:normal;
+    font-style:normal
+} 
 
+@font-face {
+    font-family: 'gothambook';
+    src: url("/resources/fonts/gotham-book-webfont.eot");
+    src: url("/resources/fonts/gotham-book-webfont.eot?#iefix") format("embedded-opentype"), url("/resources/fonts/gotham-book-webfont.woff2") format("woff2"), url("/resources/fonts/gotham-book-webfont.woff") format("woff"), url("/resources/fonts/gotham-book-webfont.ttf") format("truetype"), url("/resources/fonts/gotham-book-webfont.svg#gothambook") format("svg");
+    font-weight: normal;
+    font-style: normal
+}
+
+@font-face {
+    font-family: 'gothamlight';
+    src: url("/resources/fonts/gotham-light-webfont.eot");
+    src: url("/resources/fonts/gotham-light-webfont.eot?#iefix") format("embedded-opentype"), url("/resources/fonts/gotham-light-webfont.woff2") format("woff2"), url("/resources/fonts/gotham-light-webfont.woff") format("woff"), url("/resources/fonts/gotham-light-webfont.ttf") format("truetype"), url("/resources/fonts/gotham-light1-webfont.svg#gothamlight") format("svg");
+    font-weight: normal;
+    font-style: normal
+}
+
+@font-face {
+    font-family: 'gothammedium';
+    src: url("/resources/fonts/gotham-medium-webfont.eot");
+    src: url("/resources/fonts/gotham-medium-webfont.eot?#iefix") format("embedded-opentype"), url("/resources/fonts/gotham-medium-webfont.woff2") format("woff2"), url("/resources/fonts/gotham-medium-webfont.woff") format("woff"), url("/resources/fonts/gotham-medium-webfont.ttf") format("truetype"), url("/resources/fonts/gotham-medium-webfont.svg#gothammedium") format("svg");
+    font-weight: normal;
+    font-style: normal
+}
 
 .x-form-trigger{
-    height:5px!important;
-    background: url("/Demo6/resources/images/arrow.png") !important;
+    background: url("/resources/images/arrow.png") !important;
 }
 
 .combo tr td table tr td input {
@@ -35,7 +62,7 @@
 }
 
 .combo tr td table tr td .x-form-arrow-trigger{
-    background: url("/Demo6/resources/images/arrow.png") !important;
+    background: url("/resources/images/arrow.png") !important;
     background-position:center;
     height: 18px;
     background-repeat:no-repeat!important;
@@ -119,6 +146,11 @@ img {
 .section--breadcrumb a {
     font-family: 'gothammedium';
 }
+
+.breadcrumb a {
+    font-family: 'gothammedium';
+}    
+
 .color--white a {
     color: #fff;
     text-decoration:none;
@@ -142,6 +174,8 @@ strong, b {
     margin: 20px 0;    
     padding: 0;
     text-align: right;
+    font-family: 'gothammedium';
+
 }
 
 .footer__nav li{
@@ -155,6 +189,15 @@ strong, b {
 .footer__nav li a{
     color: #7ac142;
     text-decoration: none;
+    font-size: 16px;
+    line-height: 24px;
+    font-family: 'gothammedium';
+}
+
+.copyright{
+    font-size: 10px !important;
+    text-align: right;
+    font-family:gotham-boldbold;
 }
 
 .welcome {
@@ -250,28 +293,28 @@ strong, b {
 }
 
 .goButton{
-    background: url("/Demo6/resources/images/goBtn.gif") !important;
+    background: url("/resources/images/goBtn.gif") !important;
     width: 42px;
     height: 21px;
     margin-bottom:0px!important;
 }
 
 .loginButton{
-    background: url("/Demo6/resources/images/loginBtn.gif") !important;
+    background: url("/resources/images/loginBtn.gif") !important;
     width: 85px;
     height: 22px;
     margin-bottom:0px!important;
 }
 
 .createOrderButton{
-    background: url("/Demo6/resources/images/createOrder.gif") !important;
+    background: url("/resources/images/createOrder.gif") !important;
     width:120px;
     height: 22px;
     margin-bottom:0px!important;
 }
 
 .copyOrderButton{
-    background: url("/Demo6/resources/images/copyOrder.gif") !important;
+    background: url("/resources/images/copyOrder.gif") !important;
     width:108px;
     height: 22px;
     margin-bottom:0px!important;
@@ -308,15 +351,16 @@ strong, b {
 
 .innerPageSub {
     width: 155px;
-    height:100px; 
-    font-family: Verdana;
-    font-size: 11px;
+    height:105px; 
+    font-family: verdana, arial, helvetica, sans-serif;
+    font-size: 12px;
     color: #666666;
+    margin:0px;
 }
 
 #messageBoard {
     margin: 0px 0px 0px 10px;
-    background-image: url("/Demo6/resources/images/blue_background.gif");
+    background-image: url("/resources/images/blue_background.gif");
     background-repeat: no-repeat;
 }
 
@@ -339,15 +383,29 @@ body{
     overflow: scroll;
 }
 
-h1,h2,p,hr{
+h1,h2,p,hr,.text{
     color: #666;
-    /*    margin: 0;
-        padding: 0;*/
+    font-family: verdana, arial, helvetica, sans-serif;
 }
 
+.text{
+    margin:0px 6px;
+}
 
 .x-panel-body-default{
     color:#525252;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+.x-grid-cell-inner{
+    font-family: Verdana,Arial,sans-serif;
+    color: #222222;
+}
+
+.x-column-header-text{
+    font-weight: normal;
+    color: #555555;
+    font-family: Verdana,Arial,sans-serif;
 }
 
 .x-panel-body{
@@ -392,11 +450,11 @@ h1,h2,p,hr{
 //icon image stuff
 
 /*
-@font-face{font-family:'icomoon';src:url("/Demo6/resources/fonts/icomoon/icomoon.eot");src:url("/Demo6/resources/fonts/icomoon/icomoon.eot?#iefix") format("embedded-opentype"),url("/Demo6/resources/fonts/icomoon/icomoon.woff") format("woff"),url("/Demo6/resources/fonts/icomoon/icomoon.ttf") format("truetype"),url("/Demo6/resources/fonts/icomoon/icomoon.svg") format("svg");font-weight:normal;font-style:normal}  //,url("/Demo6/resources/fonts/gotham-bold-webfont.woff2") format("woff2")
-/*@font-face{font-family:'gothamlight';src:url("/Demo6/resources/fonts/gotham-light-webfont.eot");src:url("/Demo6/resources/fonts/gotham-light-webfont.eot?#iefix") format("embedded-opentype"),url("/Demo6/resources/fonts/gotham-light-webfont.woff2") format("woff2"),url("/Demo6/resources/fonts/gotham-light-webfont.woff") format("woff"),url("/Demo6/resources/fonts/gotham-light-webfont.ttf") format("truetype"),url("/Demo6/resources/fonts/gotham-light1-webfont.svg#gothamlight") format("svg");font-weight:normal;font-style:normal}
-@font-face{font-family:'gothambook';src:url("/Demo6/resources/fonts/gotham-book-webfont.eot");src:url("/Demo6/resources/fonts/gotham-book-webfont.eot?#iefix") format("embedded-opentype"),url("/Demo6/resources/fonts/gotham-book-webfont.woff2") format("woff2"),url("/Demo6/resources/fonts/gotham-book-webfont.woff") format("woff"),url("/Demo6/resources/fonts/gotham-book-webfont.ttf") format("truetype"),url("/Demo6/resources/fonts/gotham-book-webfont.svg#gothambook") format("svg");font-weight:normal;font-style:normal}*/
+@font-face{font-family:'icomoon';src:url("/resources/fonts/icomoon/icomoon.eot");src:url("/resources/fonts/icomoon/icomoon.eot?#iefix") format("embedded-opentype"),url("/resources/fonts/icomoon/icomoon.woff") format("woff"),url("/resources/fonts/icomoon/icomoon.ttf") format("truetype"),url("/resources/fonts/icomoon/icomoon.svg") format("svg");font-weight:normal;font-style:normal}  //,url("/resources/fonts/gotham-bold-webfont.woff2") format("woff2")
+/*@font-face{font-family:'gothamlight';src:url("/resources/fonts/gotham-light-webfont.eot");src:url("/resources/fonts/gotham-light-webfont.eot?#iefix") format("embedded-opentype"),url("/resources/fonts/gotham-light-webfont.woff2") format("woff2"),url("/resources/fonts/gotham-light-webfont.woff") format("woff"),url("/resources/fonts/gotham-light-webfont.ttf") format("truetype"),url("/resources/fonts/gotham-light1-webfont.svg#gothamlight") format("svg");font-weight:normal;font-style:normal}
+@font-face{font-family:'gothambook';src:url("/resources/fonts/gotham-book-webfont.eot");src:url("/resources/fonts/gotham-book-webfont.eot?#iefix") format("embedded-opentype"),url("/resources/fonts/gotham-book-webfont.woff2") format("woff2"),url("/resources/fonts/gotham-book-webfont.woff") format("woff"),url("/resources/fonts/gotham-book-webfont.ttf") format("truetype"),url("/resources/fonts/gotham-book-webfont.svg#gothambook") format("svg");font-weight:normal;font-style:normal}*/
 
-/*@font-face{font-family:'generic';src:url("/Demo6/resources/fonts/generic.eot");src:url("/Demo6/resources/fonts/generic.eot") format("embedded-opentype"),url("/Demo6/resources/fonts/generic.ttf") format("truetype"),url("/Demo6/resources/fonts/generic.woff") format("woff"),url("/Demo6/resources/fonts/generic.svg") format("svg");font-weight:normal;font-style:normal}*/
+/*@font-face{font-family:'generic';src:url("/resources/fonts/generic.eot");src:url("/resources/fonts/generic.eot") format("embedded-opentype"),url("/resources/fonts/generic.ttf") format("truetype"),url("/resources/fonts/generic.woff") format("woff"),url("/resources/fonts/generic.svg") format("svg");font-weight:normal;font-style:normal}*/
 
 //[class^="generic-"],[class*=" generic-"]{font-family:'generic';speak:none;font-style:normal;font-weight:normal;font-variant:normal;text-transform:none;line-height:1;-webkit-font-smoothing:antialiased;-moz-osx-font-smoothing:grayscale}.generic-plus2:before{content:"\e603"}.generic-arrow_button:before{content:"\e602"}.generic-burger_close:before{content:"\e600"}.generic-burger_open:before{content:"\e601"}.generic-search:before{content:"\e800"}.generic-menu:before{content:"\e801"}.generic-menu2:before{content:"\e802"}.generic-menu3:before{content:"\e803"}.generic-menu4:before{content:"\e804"}.generic-plus:before{content:"\e805"}.generic-minus:before{content:"\e806"}
 

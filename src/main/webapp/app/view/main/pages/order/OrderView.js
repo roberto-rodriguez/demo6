@@ -17,7 +17,7 @@ Ext.define('DemoExtJs.view.main.pages.order.OrderView', {
             xtype: 'historySearch'
         },
         {
-            html: '<div style="margin: 10px;">Clic on the status link to view the status of an order or create a new order by selecting "Create Order".</div>',
+            html: '<div class="text" style="margin: 10px;">Clic on the status link to view the status of an order or create a new order by selecting "Create Order".</div><br>',
             width: '100%'
         },
         {

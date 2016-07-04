@@ -17,7 +17,7 @@ Ext.define('DemoExtJs.view.auth.AuthForm', {
             width: 244,
             height: 224,
             style: {
-                'background': 'url(/Demo6/resources/images/loginBG.gif) no-repeat;',
+                'background': 'url(/resources/images/loginBG.gif) no-repeat;',
                 'padding': '55px 10px 10px 10px'
             },
             items: [
@@ -28,7 +28,7 @@ Ext.define('DemoExtJs.view.auth.AuthForm', {
                         'width': 'auto',
                         'height': 'auto'
                     },
-                    html: '<div style="width:100%"><p style="text-align:right;width:auto;height:auto;margin:0px;padding:0px">*Required field</p></div>'
+                    html: '<div style="width:100%"><p style="text-align:right;width:auto;height:auto;margin:0px;padding:0px;font-family: verdana, arial, helvetica, sans-serif;">*Required field</p></div>'
                 },
                 {
                     xtype: 'textfield',

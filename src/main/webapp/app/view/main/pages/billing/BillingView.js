@@ -14,7 +14,7 @@ Ext.define('DemoExtJs.view.main.pages.billing.BillingView', {
             xtype:'accountSearch'
         },
         {
-            html: 'Download and analize your invoice by selecting the invoice you would like to view. click the reference link to view the detail, status and resolution of the billing inquiry.<br>',
+            html: '<div class="text">Download and analize your invoice by selecting the invoice you would like to view. click the reference link to view the detail, status and resolution of the billing inquiry.</div><br>',
             width: '100%'
         },
         {
