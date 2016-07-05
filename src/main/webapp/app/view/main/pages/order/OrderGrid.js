@@ -16,11 +16,6 @@ Ext.define('DemoExtJs.view.main.pages.order.OrderGrid', {
                     hidden: true
                 },
                 {
-                    text: "", //TODO checkbock here
-                    width: '3%',
-                    align: 'center'
-                },
-                {
                     text: "PD",
                     width: '6%',
                     dataIndex: 'pd',
@@ -72,6 +67,9 @@ Ext.define('DemoExtJs.view.main.pages.order.OrderGrid', {
                 }
 
             ]
+        },
+        selModel: {
+            selType: 'checkboxmodel'
         }
     },
     constructor: function (config) {

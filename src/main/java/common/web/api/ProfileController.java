@@ -69,13 +69,15 @@ public class ProfileController {
 
 class Profile{
     private Integer id;
+    private boolean check;
     private String userId;
     private String firstName;
     private String lastName;
 
     public Profile(Integer id) {
         this.id = id;
-        this.userId = "aalonso@woundtech.net";
+        this.check = ((id % 2) == 0);
+        this.userId = "aalonso" + id + "@woundtech.net";
         this.firstName = "Alejandro";
         this.lastName = "Alonso";
          }
@@ -134,6 +136,20 @@ class Profile{
      */
     public void setLastName(String lastName) {
         this.lastName = lastName;
+    }
+
+    /**
+     * @return the check
+     */
+    public boolean isCheck() {
+        return check;
+    }
+
+    /**
+     * @param check the check to set
+     */
+    public void setCheck(boolean check) {
+        this.check = check;
     }
 
     

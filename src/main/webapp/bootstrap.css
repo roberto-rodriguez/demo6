@@ -386,6 +386,13 @@ strong, b {
     margin-bottom:0px!important;
 }
 
+.userDetailsButton{
+    background: url("/resources/images/userDetails.gif") !important;
+    width: 91px;
+    height: 22px;
+    margin-bottom:0px!important;
+}
+
 .createOrderButton{
     background: url("/resources/images/createOrder.gif") !important;
     width:120px;

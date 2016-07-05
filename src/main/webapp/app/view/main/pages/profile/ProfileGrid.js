@@ -4,6 +4,10 @@ Ext.define('DemoExtJs.view.main.pages.profile.ProfileGrid', {
     frame: true,
     collapsible: true,
     style: 'margin-left:2%;margin-top:5px',
+    requires: [
+        'Ext.selection.CheckboxModel',
+        'DemoExtJs.component.CheckColumn'
+    ],
     config: {
         store: 'DemoExtJs.store.ProfileStore',
         columns: {
@@ -16,15 +20,11 @@ Ext.define('DemoExtJs.view.main.pages.profile.ProfileGrid', {
                     hidden: true
                 },
                 {
-                    text: "", //TODO checkbock here
-                    width: '3%',
-                    align: 'center'
-                },
-                {
-                    text: "User ID", 
+                    text: "User ID",
                     dataIndex: 'userId',
                     width: '36%',
-                    align: 'center'
+                    align: 'center',
+                    sortable: true
                 },
                 {
                     text: "Last Name",
@@ -36,13 +36,40 @@ Ext.define('DemoExtJs.view.main.pages.profile.ProfileGrid', {
                     align: 'center'
                 },
                 {
-                    text: "View & Edit Details"
+                    text: "View & Edit Details",
+                    align: 'center',
+                    renderer: function (val, meta, rec) {
+                        // generate unique id for an element
+                        var id = Ext.id();
+                        Ext.defer(function () {
+                            Ext.widget('button', {
+                                renderTo: id,
+                                cls:'userDetailsButton',
+                                handler: function () {
+                                    Ext.Msg.alert("Hello World")
+                                }
+                            });
+                        }, 50);
+                        return Ext.String.format('<div id="{0}"></div>', id);
+                    }
                 }
             ]
+        },
+        selModel: {
+            selType: 'checkboxmodel',
+//            onHeaderClick: function (headerCt, header, e) {
+//                if (header.isCheckerHd) {
+//                      console.log('isCheckerHd');
+//                }else{
+//                      console.log('UN CheckerHd');
+//                }
+//            }
         }
     },
     constructor: function (config) {
-        this.initConfig(config);
-        return this.callParent(arguments);
+        var me = this;
+        me.initConfig(config);
+        me.callParent(arguments);
+
     }
 });
