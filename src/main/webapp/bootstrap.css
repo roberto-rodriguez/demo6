@@ -96,8 +96,66 @@
     content: "\e806"
 }
 
+.baseTextField tbody tr .x-form-field{
+    width:183px !important;
+    height:20px !important; 
+}
+
+.addressTextField tbody tr .x-form-field{
+    width:215px !important;
+    height:20px !important; 
+}
+
+.shortAddressTextField tbody tr .x-form-field{
+    width:100px !important;
+    height:20px !important; 
+}
+
+/*.x-toolbar-default {
+    border-width: 0px 0px 1px 0px;
+}*/
+
+.x-toolbar-default h2 {
+    float: left;
+    display: inline;
+    margin:0 0 0 20px;
+    line-height: 18px;
+    height: 20px\9;
+    font-weight: bold;
+    font-size: 14px;
+    font-family: verdana, arial, helvetica, sans-serif;
+}
+
+.x-btn-default-toolbar-small-over,.x-btn-default-toolbar-small-focus {
+    border-width: 0px!important;
+    background-image: none!important;
+    background-color: transparent!important;
+}
+
+.SB_header{
+    background-image: url("/resources/images/SB_header.gif") !important;
+    background-repeat:repeat-x;
+    border-color: #d8d8d8;
+    border-width: 0px 0px 1px 0px;
+}
+
+.SB_footer{
+    background-image: url("/resources/images/SB_footer.gif") !important;
+    background-repeat:repeat-x;
+    border-width:0px;
+    height:39px;
+}
+
 .x-form-trigger{
     background: url("/resources/images/arrow.png") !important;
+}
+
+p.smItalic {
+    font-style: italic;
+    vertical-align: bottom;
+    padding: 15px 40px 0px 40px;
+    text-align: right;
+    margin-bottom: 0px;
 }
 
 .combo tr td table tr td input {
@@ -113,6 +171,21 @@
 
 .comboW123 tr td table tr td input {
     width:123px!important;
+}
+
+.comboW100 tr td table{
+    width:100px!important;
+    padding-left:5px!important;
+}
+
+.x-form-text{
+    background-image:none;  
+}
+
+.x-form-item-label{
+    color: #666;
+    font-family: verdana, arial, helvetica, sans-serif;
+    width: 180px!important;
 }
 
 .combo tr td table tr td .x-form-arrow-trigger{
@@ -330,7 +403,7 @@ strong, b {
 }
 
 .x-btn-default-small{
- border-width: 0px!important;   
+    border-width: 0px!important;   
 }
 
 .header{
@@ -408,6 +481,77 @@ strong, b {
     margin-left:7px;
 }
 
+.closeButton{
+    background: url("/resources/images/SB_closeBtn.gif") !important;
+    width:72px;
+    height: 25px;
+    margin-bottom:0px!important;
+    margin-right:40px;
+    border-width: 0px;
+}
+
+.nextButton{
+    background: url("/resources/images/SB_NextBtn.gif") !important;
+    width:66px;
+    height: 22px;
+    margin-bottom:0px!important;
+    margin-right:40px;
+    border-width: 0px;
+}
+
+.previousBtn{
+    background: url("/resources/images/SB_PreviousBtn.gif") !important;
+    width:88px;
+    height: 22px;
+    margin-bottom:0px!important;
+    margin-right:10px;
+    border-width: 0px;
+}
+
+.bigCancelBtn{
+    background: url("/resources/images/SB_bigCancelBtn.gif") !important;
+    width:66px;
+    height: 22px;
+    margin-bottom:0px!important;
+    margin-right:10px;
+    border-width: 0px;
+}
+
+.submitBtn{
+    background: url("/resources/images/SB_submitBtn.gif") !important;
+    width:66px;
+    height: 22px;
+    margin-bottom:0px!important;
+    margin-right:40px;
+    border-width: 0px;
+}
+
+.addBtn{
+    background: url("/resources/images/FN_AddBtn.gif") !important;
+    width:56px;
+    height: 22px;
+    margin-bottom:0px!important;
+    margin-right:10px;
+    border-width: 0px;
+}
+
+.editBtn{
+    background: url("/resources/images/SB_EditBtn.gif") !important;
+    width:66px;
+    height: 22px;
+    margin-bottom:0px!important;
+    margin-right:10px;
+    border-width: 0px;
+}
+
+.deleteBtn{
+    background: url("/resources/images/SB_DeleteBtn.gif") !important;
+    width:66px;
+    height: 22px;
+    margin-bottom:0px!important; 
+    border-width: 0px;
+}
+
 
 .menuheader a{
     font-size: 15px;
@@ -470,7 +614,7 @@ body{
     overflow: scroll;
 }
 
-h1,h2,p,hr,.text{
+h1,h2,h3,p,hr,.text{
     color: #666;
     font-family: verdana, arial, helvetica, sans-serif;
 }
@@ -482,6 +626,10 @@ h1,h2,p,hr,.text{
 .x-panel-body-default{
     color:#525252;
     font-family: Arial, Helvetica, sans-serif;
+}
+
+.widget-label .x-panel-body-default, .widget-data .x-panel-body-default{
+    font-family: verdana, arial, helvetica, sans-serif;  
 }
 
 .x-grid-cell-inner{

@@ -5,8 +5,7 @@ Ext.define('DemoExtJs.view.main.pages.profile.ProfileGrid', {
     collapsible: true,
     style: 'margin-left:2%;margin-top:5px',
     requires: [
-        'Ext.selection.CheckboxModel',
-        'DemoExtJs.component.CheckColumn'
+        'Ext.selection.CheckboxModel'
     ],
     config: {
         store: 'DemoExtJs.store.ProfileStore',

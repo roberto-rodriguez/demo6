@@ -9,14 +9,14 @@ Ext.define('DemoExtJs.view.CardView', {
         type: 'card'
     },
     items: [
-        
+         {
+            xtype: 'mainView'
+        },
         {
             xtype: 'authView',
             width: '100%'
         },
-        {
-            xtype: 'mainView'
-        },
+       
         
         
     ]

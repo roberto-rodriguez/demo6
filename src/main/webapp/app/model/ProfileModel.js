@@ -1,23 +1,22 @@
-Ext.define('DemoExtJs.model.PrivilegeModel', {
+Ext.define('DemoExtJs.model.ProfileModel', {
     extend: 'DemoExtJs.base.BaseModel',
     fields: [
         { name: 'Id', type: 'int', defaultValue: 0 },
-        { name: 'organizationName', type: 'string' },
-        { name: 'admin', type: 'string' },
-        { name: 'orderManagement', type: 'string' },
-        { name: 'billingInvoices', type: 'string' }
+        { name: 'userId', type: 'string' },
+        { name: 'firstName', type: 'string' },
+        { name: 'lastName', type: 'string' }
     ],
    proxy : 
     {
         type : 'ajax',
         api : 
         {
-            read: '/api/privilege/list'
+            read: '/api/profile/list'
         },
         reader : 
         {
             type : 'json',
-            root : 'PrivilegeList',
+            root : 'ProfileList',
             totalProperty : 'TotalCount'
         }
         
