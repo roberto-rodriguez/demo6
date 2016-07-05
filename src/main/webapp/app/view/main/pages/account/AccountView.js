@@ -91,8 +91,8 @@ Ext.define('DemoExtJs.view.main.pages.account.AccountView', {
                     items: [
                         {
                             html: '<div>' +
-                                    '<p style="font-size: 16px;font-family: Arial;color: #0066CC;font-weight: bold;">Profile Management</p>' +
-                                    '<p class="innerPageSub">Review your accounts and manage user access.</p>' +
+                                    '<p style="font-size: 16px;font-family: Arial;color: #0066CC;font-weight: bold;">Asset Management"</p>' +
+                                    '<p class="innerPageSub">Review and manage your provisioned assets.</p>' +
                                     '</div>'
                         },
                         {

@@ -18,7 +18,8 @@ Ext.define('DemoExtJs.view.auth.AuthForm', {
             height: 224,
             style: {
                 'background': 'url(/resources/images/loginBG.gif) no-repeat;',
-                'padding': '55px 10px 10px 10px'
+                'padding': '55px 10px 10px 10px',
+//                'margin':'0px 60px'  
             },
             items: [
                 {
@@ -45,9 +46,11 @@ Ext.define('DemoExtJs.view.auth.AuthForm', {
                 },
                 {
                     layout: 'hbox',
+                    cls:'bck-transparent',
                     items: [
                         {
                             width: '60%',
+                            cls:'bck-transparent',
                             html: '<a class="loginHelp" href="" target="_parent">Forgot Password?</a><br>' +
                                     '<a class="loginHelp" href="#" onclick="">Login Help</a>'
                         }, {
@@ -56,7 +59,8 @@ Ext.define('DemoExtJs.view.auth.AuthForm', {
                             itemId: 'loginBtn',
                             cls: 'loginButton',
                             style:{
-                                'margin-top':'16px'
+                                'margin-top':'16px',
+                                'padding':'0px!important'
                             }
                         }
                     ]

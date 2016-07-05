@@ -42,6 +42,60 @@
     font-style: normal
 }
 
+@font-face {
+    font-family: 'generic';
+    src: url("/resources/fonts/generic.eot?-nx2664");
+    src: url("/resources/fonts/generic.eot?#iefix-nx2664") format("embedded-opentype"), url("/resources/fonts/generic.ttf?-nx2664") format("truetype"), url("/resources/fonts/generic.woff?-nx2664") format("woff"), url("/resources/fonts/generic.svg?-nx2664#generic") format("svg");
+    font-weight: normal;
+    font-style: normal
+}
+
+[class^="generic-"],
+[class*=" generic-"] {
+    font-family: 'generic';
+    speak: none;
+    font-style: normal;
+    font-weight: normal;
+    font-variant: normal;
+    text-transform: none;
+    line-height: 1;
+    -webkit-font-smoothing: antialiased;
+    -moz-osx-font-smoothing: grayscale
+}
+.generic-plus2:before {
+    content: "\e603"
+}
+.generic-arrow_button:before {
+    content: "\e602"
+}
+.generic-burger_close:before {
+    content: "\e600"
+}
+.generic-burger_open:before {
+    content: "\e601"
+}
+.generic-search:before {
+    content: "\e800"
+}
+.generic-menu:before {
+    content: "\e801"
+}
+.generic-menu2:before {
+    content: "\e802"
+}
+.generic-menu3:before {
+    content: "\e803"
+}
+.generic-menu4:before {
+    content: "\e804"
+}
+.generic-plus:before {
+    content: "\e805"
+}
+.generic-minus:before {
+    content: "\e806"
+}
+
 .x-form-trigger{
     background: url("/resources/images/arrow.png") !important;
 }
@@ -81,6 +135,10 @@
     background-color:transparent!important;
 }
 .loginRequiredLabel>div{
+    background-color:transparent!important;
+}
+
+.bck-transparent>div{
     background-color:transparent!important;
 }
 
@@ -156,11 +214,11 @@ img {
     text-decoration:none;
 }
 
-.col-xs-7{
-    font-family: "gothambook";
+.col-xs-7 p,.col-xs-7 ul li{
+    font-family: "gothambook"!important;
     font-size: 16px;
     line-height: 24px;
-    color: #333;
+    color: #51534a;
 }
 
 strong, b {
@@ -231,7 +289,7 @@ strong, b {
     position: absolute;
     bottom: 0;
     width: 100%;
-    padding:4px 0 5px 0;
+    padding:0 0 5px 0;
     height: 15px;
     line-height: 10px;
     font-family: 'gotham-boldbold';
@@ -250,7 +308,29 @@ strong, b {
     padding: 0;
     position: absolute;
     top: 0;
+}
 
+.share-icon{
+    width: 25px;
+    height: 25px;
+    font-size: 25px;
+    line-height: 25px;
+    margin: 0 0 0 10px;
+    padding: 0;
+    background-color: #7ac142;
+    display: inline-block;
+    vertical-align: middle;
+    text-align: center;
+    font-family: 'generic';
+    speak: none;
+    font-style: normal;
+    font-weight: normal;
+    font-variant: normal;
+    text-transform: none;
+}
+
+.x-btn-default-small{
+ border-width: 0px!important;   
 }
 
 .header{

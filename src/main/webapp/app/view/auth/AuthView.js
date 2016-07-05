@@ -42,7 +42,7 @@ Ext.define('DemoExtJs.view.auth.AuthView', {
                     html: '<div class="content__row">' +
                             '<div class="breadcrumb text--uppercase color--white">' +
                             '<a href="/home.html">HOME > </a> Customer Login' +
-                            '<a href="#" style="float:right">Share <span class="icon generic-plus2"></span></a> </div>' +
+                            '<a href="#" style="float:right">Share <span class="share-icon generic-plus2"></span></a> </div>' +
                             '</div>'
                 },
                 {flex: 1}
@@ -74,7 +74,7 @@ Ext.define('DemoExtJs.view.auth.AuthView', {
                     flex: 1
                 },
                 {
-                    width:700,
+                    width:640,
                     style: {
                     },
                     html: '<div class="col-xs-7"><p>The FPL FiberNet Customer Portal is the most convenient, efficient way to access your account online.</p>' +
@@ -88,7 +88,7 @@ Ext.define('DemoExtJs.view.auth.AuthView', {
                             '</div>'
                 },
                 {
-                    width: 250,
+                    width: 310,
                     xtype: 'authForm'
                 },
                 {flex: 1}
