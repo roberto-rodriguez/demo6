@@ -6,7 +6,7 @@ Ext.define('DemoExtJs.view.main.pages.profile.AddPrivilegeGrid', {
     height: 280,
     style: 'margin-left:2%;margin-top:10px',
     requires: [
-//        'DemoExtJs.component.GoButton'
+        'DemoExtJs.view.main.pages.profile.AddPrivilegeWindow'
     ],
     header: {
         defaults: {
@@ -15,7 +15,10 @@ Ext.define('DemoExtJs.view.main.pages.profile.AddPrivilegeGrid', {
         },
         items: [
             {
-                cls: 'addBtn'
+                cls: 'addBtn',
+                handler:function(){
+                   Ext.create('DemoExtJs.view.main.pages.profile.AddPrivilegeWindow').show();
+                }
             },
             {
                 cls: 'editBtn'
@@ -67,5 +70,8 @@ Ext.define('DemoExtJs.view.main.pages.profile.AddPrivilegeGrid', {
     constructor: function (config) {
         this.initConfig(config);
         return this.callParent(arguments);
+    },
+    onAddProvilege:function(){
+        alert('onAddProvilege');
     }
 });

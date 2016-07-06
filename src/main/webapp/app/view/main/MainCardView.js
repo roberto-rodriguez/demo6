@@ -21,23 +21,25 @@ Ext.define('DemoExtJs.view.main.MainCardView', {
         flex:1
     },
     items: [
+        
         {
-           xtype:'addUserPrivilegeView'
+           xtype:'accountView'  //0
         },
         {
-           xtype:'addUserView'
+            xtype:'profileView' //1
         },
         {
-           xtype:'accountView'
+            xtype:'billingView' //2
         },
         {
-            xtype:'profileView'
+            xtype:'orderView' //3
         },
         {
-            xtype:'billingView'
+           xtype:'addUserView' //4
         },
         {
-            xtype:'orderView'
-        }
+           xtype:'addUserPrivilegeView' //5
+        },
+        
     ]
 });

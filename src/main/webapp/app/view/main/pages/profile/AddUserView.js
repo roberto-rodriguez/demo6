@@ -14,12 +14,12 @@ Ext.define('DemoExtJs.view.main.pages.profile.AddUserView', {
             },
             items: [
                 {
-                    html: '<h2>&nbsp;&nbsp;User Details</h2>'
+                    html: '<h2 style="display: inline;">&nbsp;&nbsp;User Details</h2>'   
                 },
                 {
                     flex: 1
                 },
-                {
+                { 
                     xtype: 'button',
                     cls: 'closeButton'
                 }
@@ -27,10 +27,10 @@ Ext.define('DemoExtJs.view.main.pages.profile.AddUserView', {
         },
         {
             width: '100%',
-            html: '<table style="width:100%;height: 20px;">' + 
+            html: '<table style="width:100%;">' + 
                     '<tr style="width:100%;">' +
-                        '<td style="width:50%"><h3 style="margin: 30px 30px 0px 30px;font-weight: bold;font-size: 14px;color: #0066cc;">Contact Information</h3></td>' +
-                        '<td style="width:50%;"><p class="smItalic">* Required Field</p></td>' +
+                        '<td style="width:50%"><h3 style="margin:20px 30px 0px 17px;font-weight: bold;font-size: 14px;color: #0066cc;">Contact Information</h3></td>' +
+                        '<td style="width:50%;"><p class="smItalic" style="padding:10px 40px 0px 40px;">* Required Field</p></td>' +
                     '</tr>' + 
                     '</table>' +
                     '<hr>'
@@ -62,9 +62,22 @@ Ext.define('DemoExtJs.view.main.pages.profile.AddUserView', {
                 },
                 {
                     xtype: 'button',
-                    cls: 'nextButton'
+                    cls: 'nextButton',
+                    id:'userDetailsNextBtn'
                 }
             ]
         }
-    ]
+    ],
+        listeners: {
+            activate: function( newActiveItem, container, oldActiveItem, eOpts ){
+                this.onActivate( newActiveItem, container, oldActiveItem, eOpts );
+            },
+//            deactivate: function( oldActiveItem, container, newActiveItem, eOpts ){
+//                this.onDeactivate( newActiveItem, container, oldActiveItem, eOpts );
+//            }
+        },
+        onActivate:function(){
+            var me = this;
+            //me.down()
+        }
 });

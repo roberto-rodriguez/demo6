@@ -1,5 +1,5 @@
 Ext.define('DemoExtJs.view.main.pages.profile.ProfileView', {
-    extend:'DemoExtJs.base.BaseView',
+    extend: 'DemoExtJs.base.BaseView',
     alias: 'widget.profileView',
     requires: [
         'DemoExtJs.view.main.pages.profile.ProfileTabPanel'
@@ -14,15 +14,9 @@ Ext.define('DemoExtJs.view.main.pages.profile.ProfileView', {
             width: '100%'
         },
         {
-          xtype:'button',
-          style:{
-            background: 'url(/resources/images/addNewUser.gif) !important',
-            width: '91px',
-            height: '22px',
-            border: '0px',
-            padding: '0px',
-            'margin-bottom':'0px!important'
-          }
+            xtype: 'button',
+            id:'addNewUserBtn',
+            cls: 'addNewUserBtn' 
         },
         {
             xtype: 'profileTabPanel'

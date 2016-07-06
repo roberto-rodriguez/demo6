@@ -18,7 +18,7 @@ Ext.define('DemoExtJs.view.main.pages.profile.AddUserPrivilegeView', {
             },
             items: [
                 {
-                    html: '<h2>&nbsp;&nbsp;User Details</h2>'
+                    html: '<h2 style="display: inline;">&nbsp;&nbsp;User Details</h2>'
                 },
                 {
                     flex: 1
@@ -30,14 +30,10 @@ Ext.define('DemoExtJs.view.main.pages.profile.AddUserPrivilegeView', {
             ]
         },
         {
-            xtype: 'contactInfo',
-            style: {
-                'margin-top': '10px'
-            }
+            xtype: 'contactInfo' 
         },
-        {
-            padding: '10px 20px 0px 20px',
-            html: '<h3 style="font-weight: bold;font-size: 14px;margin: 5px 0;color: #0066cc;">Privileges</h3>' +
+        { 
+            html: '<h3 style="font-weight: bold;font-size: 14px;margin: 5px 0;color: #0066cc;padding:10px 20px 0px 20px">Privileges</h3>' +
                     '<hr> '
         },
         {
@@ -66,6 +62,7 @@ Ext.define('DemoExtJs.view.main.pages.profile.AddUserPrivilegeView', {
                     flex: 1
                 },
                 {
+                    id:'previousBtn',
                     xtype: 'button',
                     cls: 'previousBtn'
                 },

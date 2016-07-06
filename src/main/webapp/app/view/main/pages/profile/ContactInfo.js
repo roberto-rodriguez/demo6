@@ -2,11 +2,11 @@ Ext.define('DemoExtJs.view.main.pages.profile.ContactInfo', {
     extend: 'DemoExtJs.base.BaseView',
     alias: 'widget.contactInfo',
     width: '100%',
-    padding: '10px 20px',
+    padding: '10px 0px',
     layout: 'column',
     defaults: {
         border: false,
-        bodyStyle: 'padding:2px',
+        bodyStyle: 'padding:2px 2px 2px 20px',
         layout: 'column',
         columnWidth: .16,
         html: '-',
@@ -14,7 +14,8 @@ Ext.define('DemoExtJs.view.main.pages.profile.ContactInfo', {
     },
     items: [
         {
-            html: '<h3 style="font-weight: bold;font-size: 14px;margin: 5px 0;color: #0066cc;">Contact Information</h3>' +
+            bodyStyle: 'padding:0px',
+            html: '<h3 style="font-weight: bold;font-size: 14px;padding:0px 0px 4px 20px;color: #0066cc;margin-bottom: 0px;">Contact Information</h3>' +
                     '<hr>',
             columnWidth: 1
         },
