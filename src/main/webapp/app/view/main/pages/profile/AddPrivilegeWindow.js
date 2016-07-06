@@ -1,20 +1,10 @@
 Ext.define('DemoExtJs.view.main.pages.profile.AddPrivilegeWindow', {
-    extend: 'Ext.window.Window',
+    extend: 'DemoExtJs.base.BaseWindow',
     alias: 'widget.addPrivilegeGrid',
     title: 'Privileges',
-    height: 305,
-    width: 715,
-    cls: 'as-windows',
-    bodyStyle: 'background-color:white;',
-    modal: true,
-//    style: 'margin-left:2%;margin-top:10px',
-    requires: [
-//        'DemoExtJs.component.GoButton'
-    ],
     items: [
         {
             width: '100%',
-//            height:40,
             html: '<table style="width:100%;">' +
                     '<tr style="width:100%;">' +
                     '<td style="width:50%">' +
@@ -59,16 +49,12 @@ Ext.define('DemoExtJs.view.main.pages.profile.AddPrivilegeWindow', {
                         {
                             xtype: 'checkbox',
                             boxLabel: 'Admin',
-                            id: 'privAdmin',
-//                            checked: true,
-                            handler: function () {
-                               // alert(this.getValue());
-                            }
-                        },{
+                            id: 'privAdmin'
+                        }, {
                             xtype: 'checkbox',
                             boxLabel: 'Order Management',
                             id: 'privOrder'
-                        },{
+                        }, {
                             xtype: 'checkbox',
                             boxLabel: 'Billing & Invoices',
                             id: 'privBilling'
@@ -98,24 +84,36 @@ Ext.define('DemoExtJs.view.main.pages.profile.AddPrivilegeWindow', {
                     flex: 1
                 },
                 {
+                    id: 'privSaveButton',
                     xtype: 'button',
                     cls: 'saveBtn'
                 },
                 {
+                    id: 'privCancelButton',
                     xtype: 'button',
                     cls: 'bigCancelBtn',
-                    style:{
-                        'margin-right':'35px'
+                    style: {
+                        'margin-right': '35px'
                     }
                 }
             ]
         }
     ],
-    constructor: function (config) {
-        this.initConfig(config);
-        return this.callParent(arguments);
+    listeners: {
+        activate: function (newActiveItem, container, oldActiveItem, eOpts) {
+            var me = this;
+//            alert('activate');
+            me.down('#privSaveButton').addListener({
+                click: {fn: me.hideWindow, scope: me}
+            });
+            
+             me.down('#privCancelButton').addListener({
+                click: {fn: me.hideWindow, scope: me}
+            });
+        }
     },
-    onAddProvilege: function () {
-        alert('onAddProvilege');
+    hideWindow:function(){ 
+        this.hide();
+        this.destroy();
     }
 });

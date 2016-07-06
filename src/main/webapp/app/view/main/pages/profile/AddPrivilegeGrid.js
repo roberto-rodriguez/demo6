@@ -15,12 +15,11 @@ Ext.define('DemoExtJs.view.main.pages.profile.AddPrivilegeGrid', {
         },
         items: [
             {
-                cls: 'addBtn',
-                handler:function(){
-                   Ext.create('DemoExtJs.view.main.pages.profile.AddPrivilegeWindow').show();
-                }
+                id:'addPrivilegeBtn',
+                cls: 'addBtn' 
             },
             {
+                id:'editPrivilegeBtn',
                 cls: 'editBtn'
             },
             {

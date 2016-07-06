@@ -97,8 +97,14 @@ font-style: normal
 }
 
 //Windows --------------
+.x-panel-default-docked-top, .x-panel-docked-top, .x-docked-top{
+    padding:0px!important;
+}
+
+ 
+
 .as-windows{
-    background-color: red;
+    background-color: white;
 }
 
 .x-window-header-default-top{
@@ -124,7 +130,7 @@ font-style: normal
     padding: 4px 0px 0px 0px;
 }
 
-.x-tool-default{
+.x-window-header-body-default .x-box-inner .x-box-target .x-tool-default{
     left:630px!important;
     width:72px!important;
 }

@@ -37,6 +37,18 @@ Ext.define('DemoExtJs.controller.ProfileController', {
                     "addUserPrivilegeView toolbar > button#previousBtn": {
                         click: this.onAddUserPrivilegeBackBtn
                     },
+                    "addUserPrivilegeView toolbar > button#cancelBtn": {
+                        click: this.onAddUserPrivilegeCancelBtn
+                    },
+                    "addUserPrivilegeView toolbar > button#submitBtn": {
+                        click: this.onAddUserPrivilegeSubmitBtn
+                    }, 
+                    "addUserPrivilegeView addPrivilegeGrid header > button#addPrivilegeBtn": {
+                        click: this.onAddPrivilegeBtn
+                    },
+                    "addUserPrivilegeView addPrivilegeGrid header > button#editPrivilegeBtn": {
+                        click: this.onEditPrivilegeBtn
+                    },
                 }
         );
  this.callParent(arguments);
@@ -53,5 +65,18 @@ Ext.define('DemoExtJs.controller.ProfileController', {
     },
     onAddUserPrivilegeBackBtn:function(){
         this.getMainCardView().getLayout().setActiveItem(4);
+    },
+    onAddUserPrivilegeCancelBtn:function(){
+        this.getMainCardView().getLayout().setActiveItem(1);
+    },
+    onAddUserPrivilegeSubmitBtn:function(){
+        this.getMainCardView().getLayout().setActiveItem(1);
+        Ext.create('DemoExtJs.view.main.pages.profile.AddUserSuccessWindow').show();
+    },
+    onAddPrivilegeBtn:function(){
+        Ext.create('DemoExtJs.view.main.pages.profile.AddPrivilegeWindow').show();
+    },
+    onEditPrivilegeBtn:function(){
+        Ext.create('DemoExtJs.view.main.pages.profile.AddPrivilegeWindow').show();
     }
 });
