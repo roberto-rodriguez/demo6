@@ -10,7 +10,10 @@ Ext.define('DemoExtJs.base.BaseFormPanel', {
     width: 760,
     layout: 'column',
     defaults: {
-        columnWidth: 0.5
+        columnWidth: 0.5,
+        style:{
+           'margin-top':'3px'
+        }
     },
     validate: function () {
         var me = this,

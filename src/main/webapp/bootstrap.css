@@ -19,11 +19,11 @@
 } 
 
 @font-face{
-font-family: 'gothambook';
-src: url("/resources/fonts/gotham-book-webfont.eot");
-src: url("/resources/fonts/gotham-book-webfont.eot?#iefix") format("embedded-opentype"), url("/resources/fonts/gotham-book-webfont.woff2") format("woff2"), url("/resources/fonts/gotham-book-webfont.woff") format("woff"), url("/resources/fonts/gotham-book-webfont.ttf") format("truetype"), url("/resources/fonts/gotham-book-webfont.svg#gothambook") format("svg");
-font-weight: normal;
-font-style: normal
+    font-family: 'gothambook';
+    src: url("/resources/fonts/gotham-book-webfont.eot");
+    src: url("/resources/fonts/gotham-book-webfont.eot?#iefix") format("embedded-opentype"), url("/resources/fonts/gotham-book-webfont.woff2") format("woff2"), url("/resources/fonts/gotham-book-webfont.woff") format("woff"), url("/resources/fonts/gotham-book-webfont.ttf") format("truetype"), url("/resources/fonts/gotham-book-webfont.svg#gothambook") format("svg");
+    font-weight: normal;
+    font-style: normal
 }
 
 @font-face {
@@ -101,7 +101,7 @@ font-style: normal
     padding:0px!important;
 }
 
- 
+
 
 .as-windows{
     background-color: white;
@@ -152,13 +152,17 @@ font-style: normal
     height:20px !important; 
 }
 
+.addressTextField{
+    margin:5px;!important;
+}
+
 .addressTextField tbody tr .x-form-field{
     width:215px !important;
     height:20px !important; 
 }
 
 .shortAddressTextField tbody tr .x-form-field{
-    width:100px !important;
+    width:95px !important;
     height:20px !important; 
 }
 
@@ -169,6 +173,9 @@ font-style: normal
 /*.x-toolbar-default {
     border-width: 0px 0px 1px 0px;
 }*/
+.h2{
+    font-size: 14px!important;
+}
 
 .x-toolbar-default h2 {
     float: left;
@@ -177,7 +184,7 @@ font-style: normal
     line-height: 18px;
     height: 20px\9;
     font-weight: bold;
-    font-size: 14px;
+    font-size: 14px!important;
     font-family: verdana, arial, helvetica, sans-serif;
 }
 
@@ -208,7 +215,8 @@ font-style: normal
 p.smItalic {
     font-style: italic;
     vertical-align: bottom;
-    padding: 15px 40px 0px 40px;
+    padding-right:40px;
+    /*padding: 15px 40px 0px 40px;*/
     text-align: right;
     margin-bottom: 0px;
 }
@@ -229,12 +237,27 @@ p.smItalic {
     height: 19px;
 }
 
+.comboW150 tr td table{
+    width:150px!important;
+}
+
 .comboW123 tr td table tr td input {
     width:123px!important;
 }
 
 .comboW100 tr td table{
     width:100px!important;
+}
+
+.comboMarginInMiddle tr td table{
+    margin-left:15px!important;
+}
+
+.comboPaddingLeft tr td table{
+    padding-left:5px!important;
+}
+
+.comboPaddingLeft tr .x-field-label-cell{
     padding-left:5px!important;
 }
 
@@ -243,6 +266,13 @@ p.smItalic {
     padding-right: 5px;
     color: #666;
     font-family: verdana, arial, helvetica, sans-serif;
+}
+
+.centered-light{
+    font-family: verdana, arial, helvetica, sans-serif;
+    font-size: 12px;
+    text-align: center;
+    color: #666;
 }
 
 .x-form-text{

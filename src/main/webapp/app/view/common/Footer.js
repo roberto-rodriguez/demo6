@@ -5,8 +5,8 @@ Ext.define('DemoExtJs.view.common.Footer', {
     width: '100%',
     height: 120,
     style: {
-//        width:'100%'
-    },
+      'margin' : '40px 0px'
+    }, 
     defaults: {
     },
     items: [

@@ -2,7 +2,7 @@ Ext.define('DemoExtJs.view.main.pages.profile.AddUserView', {
     extend: 'DemoExtJs.base.BaseView',
     alias: 'widget.addUserView',
     requires: [
-        'DemoExtJs.view.main.pages.profile.UserDetailsForm'
+        'DemoExtJs.component.UserDetailsForm'
     ],
     items: [
         {

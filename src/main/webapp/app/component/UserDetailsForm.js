@@ -3,7 +3,7 @@
  * To change this template file, choose Tools | Templates
  * and open the template in the editor.
  */
-Ext.define('DemoExtJs.view.main.pages.profile.UserDetailsForm', {
+Ext.define('DemoExtJs.component.UserDetailsForm', {
     extend: 'DemoExtJs.base.BaseFormPanel',
     alias: 'widget.userDetailsForm',
 //    title: 'User Form',
@@ -20,7 +20,7 @@ Ext.define('DemoExtJs.view.main.pages.profile.UserDetailsForm', {
             name: 'lastName'
         },
         {
-            fieldLabel: 'User ID (Email)*',
+            fieldLabel: 'Email Address*',
             name: 'email'
         },
         {
@@ -31,7 +31,7 @@ Ext.define('DemoExtJs.view.main.pages.profile.UserDetailsForm', {
             name: 'addressType',
             columnWidth: 1,
             xtype: 'combo',
-            cls: 'combo comboW100',
+            cls: 'combo comboW100 comboPaddingLeft',
             fieldLabel: 'Address Type:'
         },
         {
@@ -62,7 +62,7 @@ Ext.define('DemoExtJs.view.main.pages.profile.UserDetailsForm', {
             fieldLabel: 'State*',
             name: 'state', 
             xtype: 'combo',
-            cls: 'combo comboW100',
+            cls: 'combo comboW100 comboPaddingLeft',
             columnWidth: 1
         },
         {

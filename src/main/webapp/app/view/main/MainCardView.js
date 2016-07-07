@@ -4,11 +4,12 @@ Ext.define('DemoExtJs.view.main.MainCardView', {
         'DemoExtJs.view.main.pages.order.OrderView',
         'DemoExtJs.view.main.pages.profile.ProfileView',
         'DemoExtJs.view.main.pages.billing.BillingView',
-        'DemoExtJs.view.main.pages.account.AccountView',
-        'DemoExtJs.view.main.pages.profile.UserDetailsForm',
+        'DemoExtJs.view.main.pages.account.AccountView', 
         'DemoExtJs.view.main.pages.profile.AddUserView',
         'DemoExtJs.view.main.pages.profile.ProfileView',
-        'DemoExtJs.view.main.pages.profile.AddUserPrivilegeView'
+        'DemoExtJs.view.main.pages.profile.AddUserPrivilegeView',
+        'DemoExtJs.view.main.pages.order.requestFlow.OrderRequest1',
+        'DemoExtJs.view.main.pages.order.requestFlow.OrderRequest2'
     ],
     alias: 'widget.mainCardView',
     style: {
@@ -22,6 +23,13 @@ Ext.define('DemoExtJs.view.main.MainCardView', {
     },
     items: [
         {
+            xtype: 'orderRequest2' //7
+        },  
+        {
+            xtype: 'orderRequest1' //6
+        },
+        
+        {
             xtype: 'accountView'  //0
         },
         {
@@ -33,12 +41,15 @@ Ext.define('DemoExtJs.view.main.MainCardView', {
         {
             xtype: 'orderView' //3
         },
-        {
-            xtype: 'addUserView' //4
-        },
+//        {
+//            xtype: 'addUserView' //4
+//        },
         {
             xtype: 'addUserPrivilegeView' //5
-        } 
+        }, 
+//        {
+//            xtype: 'orderRequest1' //6
+//        } 
 
     ]
 });
