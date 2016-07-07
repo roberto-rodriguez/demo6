@@ -133,8 +133,7 @@ Ext.define('DemoExtJs.view.main.pages.order.requestFlow.OrderRequest1', {
                 },
                 {
                     xtype: 'button',
-                    cls: 'nextButton',
-                    id: 'orderRequest1NextBtn'
+                    cls: 'nextButton' 
                 }
             ]
         }

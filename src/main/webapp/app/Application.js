@@ -9,7 +9,8 @@ Ext.define('DemoExtJs.Application', {
         'DemoExtJs.controller.BaseController',
         'DemoExtJs.controller.AuthController',
         'DemoExtJs.controller.MainController',
-        'DemoExtJs.controller.ProfileController'
+        'DemoExtJs.controller.ProfileController',
+        'DemoExtJs.controller.OrderController'
     ],
     stores: [
         'DemoExtJs.store.BillingHistoryStore',

@@ -21,9 +21,11 @@ Ext.define('DemoExtJs.view.main.pages.order.OrderView', {
             width: '100%'
         },
         {
+            xtype:'panel',
             layout: 'hbox',
             items: [
                 {
+                    id:'createOrderButton',
                     xtype: 'button',
                     cls:'createOrderButton'
                 }, {

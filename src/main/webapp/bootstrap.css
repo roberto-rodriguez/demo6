@@ -96,6 +96,7 @@
     content: "\e806"
 }
 
+
 //Windows --------------
 .x-panel-default-docked-top, .x-panel-docked-top, .x-docked-top{
     padding:0px!important;
@@ -212,6 +213,19 @@
     background: url("/resources/images/arrow.png") !important;
 }
 
+.calendar tr td table{
+    width:185px!important;
+} 
+
+.calendar tr td input, .calendar .x-form-trigger{
+    height:19px!important;
+}
+
+.calendar .x-form-trigger{
+    background: url("/resources/images/calendar.jpg") !important;
+    background-repeat: no-repeat; 
+}
+
 p.smItalic {
     font-style: italic;
     vertical-align: bottom;
@@ -237,6 +251,14 @@ p.smItalic {
     height: 19px;
 }
 
+.comboW185 tr td table{
+    width:185px!important;
+}
+
+.comboW150{
+    margin:5px 0px!important;
+}
+
 .comboW150 tr td table{
     width:150px!important;
 }
@@ -249,8 +271,33 @@ p.smItalic {
     width:100px!important;
 }
 
+.comboW50 tr td table{
+    width:50px!important;
+}
+
 .comboMarginInMiddle tr td table{
     margin-left:15px!important;
+}
+
+.fieldW100, .fieldW425{
+    height:20px;
+}
+
+.fieldW100 tr td input{
+    width:100px!important;
+}
+
+.fieldW425 tr td input{
+    width:425px!important;
+}
+
+.fieldMarginInMiddle{
+    margin:0px 5px!important;
+}
+
+.fieldMarginInMiddle tr td input{
+    width: 173px!important;
+    margin-left:10px!important;
 }
 
 .comboPaddingLeft tr td table{
@@ -282,7 +329,7 @@ p.smItalic {
 .x-form-item-label{
     color: #666;
     font-family: verdana, arial, helvetica, sans-serif;
-    width: 180px!important;
+    /*width: 120px!important;*/
 }
 
 .combo tr td table tr td .x-form-arrow-trigger{
@@ -665,6 +712,16 @@ strong, b {
     border: 0px;
     padding: 0px;
     margin-bottom:0px!important;
+}
+
+.saveNoSubBtn{
+    background: url(/resources/images/SB_SaveNoSubBtn.gif) !important;
+    width: 187px;
+    height: 22px;
+    border: 0px;
+    padding: 0px;
+    margin-bottom:0px!important; 
+    margin-right:10px;
 }
 
 

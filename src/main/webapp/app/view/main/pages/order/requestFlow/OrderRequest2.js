@@ -16,7 +16,7 @@ Ext.define('DemoExtJs.view.main.pages.order.requestFlow.OrderRequest2', {
             },
             items: [
                 {
-                    html: '<h2 style="display: inline;">&nbsp;&nbsp;Order Request 2</h2>'
+                    html: '<h2 style="display: inline;">&nbsp;&nbsp;Order Request</h2>'
                 },
                 {
                     flex: 1
@@ -152,13 +152,11 @@ Ext.define('DemoExtJs.view.main.pages.order.requestFlow.OrderRequest2', {
                 },
                 {
                     xtype: 'button',
-                    cls: 'previousBtn',
-                    id: 'orderRequest2prevBtn'
+                    cls: 'previousBtn' 
                 },
                 {
                     xtype: 'button',
-                    cls: 'nextButton',
-                    id: 'orderRequest2NextBtn'
+                    cls: 'nextButton' 
                 }
             ]
         }

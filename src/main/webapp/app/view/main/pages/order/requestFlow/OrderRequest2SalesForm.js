@@ -6,29 +6,49 @@
 Ext.define('DemoExtJs.view.main.pages.order.requestFlow.OrderRequest2SalesForm', {
     extend: 'DemoExtJs.base.BaseFormPanel',
     alias: 'widget.orderRequest2SalesForm',
-    height:70,
-    labelWidth: 200,
+    height: 160,
     requires: [
+        'DemoExtJs.base.BaseTextField',
+        'DemoExtJs.base.BaseComboField'
     ],
     items: [
         {
             fieldLabel: 'Sales Rep*',
-            name: 'salesRep', 
-            xtype: 'combo',
+            name: 'salesRep',
+            xtype: 'baseComboField',
             cls: 'combo comboW150 comboMarginInMiddle'
         },
         {
             fieldLabel: 'Sales Engineer*',
-            name: 'salesEngineer', 
-            xtype: 'combo',
-            cls: 'combo comboW150 comboMarginInMiddle'
+            name: 'salesEngineer',
+            xtype: 'baseComboField',
+            cls: 'combo comboW150 comboMarginInMiddle',
         },
         {
             fieldLabel: 'Channel Partner*',
-            name: 'channelPartner', 
-            xtype: 'combo',
+            name: 'channelPartner',
+            xtype: 'baseComboField',
             cls: 'combo comboW150 comboMarginInMiddle',
-            columnWidth:1
+            columnWidth: 1
+        },
+        {
+            fieldLabel: 'Channel Partner Contact:',
+            name: 'channelPartnerContact',
+            cls: 'fieldMarginInMiddle',
+            columnWidth: 1,
+            labelStyle: 'width:120px;'
+        },
+        {
+            fieldLabel: 'Channel Partner Contact Phone:',
+            name: 'channelPartnerContactPhone',
+            cls: 'fieldMarginInMiddle',
+            labelStyle: 'width:120px;'
+        },
+        {
+            fieldLabel: 'Channel Partner Contact Email:',
+            name: 'channelPartnerContactEmail',
+            cls: 'fieldMarginInMiddle',
+            labelStyle: 'width:120px;'
         }
     ],
     initialize: function () {

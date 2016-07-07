@@ -7,6 +7,7 @@ Ext.define('DemoExtJs.view.main.pages.order.requestFlow.OrderRequest2ContactForm
     extend: 'DemoExtJs.base.BaseFormPanel',
     alias: 'widget.orderRequest2ContactForm',
     height: 70,
+    labelWidth: 200,
     requires: [
     ],
     items: [
