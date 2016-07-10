@@ -696,6 +696,14 @@ strong, b {
     border-width: 0px;
 }
 
+.deleteSelectBtn{
+    background: url("/resources/images/deleteSelect.gif") !important;
+    width:97px;
+    height: 22px;
+    margin-bottom:0px!important; 
+    border-width: 0px;
+}
+
 .saveBtn{
     background: url("/resources/images/SB_SaveBtn.gif") !important;
     width:66px;
@@ -724,6 +732,11 @@ strong, b {
     margin-right:10px;
 }
 
+#billingPdfIcon{
+    padding: 0 6px;
+    vertical-align: middle; 
+    cursor:pointer;
+}
 
 .menuheader a{
     font-size: 15px;
@@ -741,7 +754,9 @@ strong, b {
 }
 //---------------
 
-
+.hr_padding20 div span div div div span div hr {
+    margin:0px 20px!important;
+}
 
 
 // Acount Management Page

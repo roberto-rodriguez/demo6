@@ -8,7 +8,7 @@ Ext.define('DemoExtJs.view.main.pages.order.OrderGrid', {
         store: 'DemoExtJs.store.OrderStore',
         columns: {
             defaults: {
-                width: '9%',
+                width: '10%',
             },
             items: [{
                     text: "Id",
@@ -17,14 +17,21 @@ Ext.define('DemoExtJs.view.main.pages.order.OrderGrid', {
                 },
                 {
                     text: "PD",
-                    width: '6%',
+                    width: '4%',
                     dataIndex: 'pd',
-                    align: 'center'
+                    align: 'center', 
+                    renderer: function (value) {
+                        return '<a href="#"><img src=/resources/images/icon_pdf.gif></a>';
+                    }
                 },
                 {
                     text: "Modify",
-                    width: '6%',
-                    dataIndex: 'modify'
+                    width: '5%',
+                    dataIndex: 'modify', 
+                    align: 'center', 
+                    renderer: function (value) {
+                        return '<a href="#"><img src=/resources/images/icon_pencil.png></a>';
+                    }
                 },
                 {
                     text: "Ref#",
@@ -34,8 +41,11 @@ Ext.define('DemoExtJs.view.main.pages.order.OrderGrid', {
                 },
                 {
                     text: "Status",
-                    width: '15%',
-                    dataIndex: 'status'
+                    width: '11%',
+                    dataIndex: 'status', 
+                    renderer: function (value) {
+                        return '<a href="#" style="color:black">' + value + '</a>';
+                    }
                 },
                 {
                     text: "Expected D",
@@ -59,7 +69,9 @@ Ext.define('DemoExtJs.view.main.pages.order.OrderGrid', {
                 },
                 {
                     text: "Date",
-                    dataIndex: 'date'
+                    dataIndex: 'date',
+                     xtype: 'datecolumn', 
+                     format:'m-d-Y'
                 },
                 {
                     text: "Submited By",

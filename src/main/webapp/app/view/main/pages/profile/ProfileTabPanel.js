@@ -23,7 +23,8 @@ Ext.define('DemoExtJs.view.main.pages.profile.ProfileTabPanel', {
             title: 'MY PROFILE',
             items: [
                 {
-                    xtype:'contactInfo'
+                    xtype:'contactInfo',
+                    cls:'hr_padding20'
                 },
                 {   
                     width:'100%',

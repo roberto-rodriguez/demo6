@@ -22,7 +22,10 @@ Ext.define('DemoExtJs.view.main.pages.billing.DisputeHistoryGrid', {
                 {
                     text: "Reference #",
                     align: 'center',
-                    dataIndex: 'referenceNumber'
+                    dataIndex: 'referenceNumber',
+                    renderer: function (value) {
+                        return '<a href="#"><img src="https://apptest.fpl.com/fibernet/image/common/icon_pdf.gif"></a>';
+                    }
                 },
                 {
                     text: "Acount Name",
@@ -49,6 +52,14 @@ Ext.define('DemoExtJs.view.main.pages.billing.DisputeHistoryGrid', {
                     text: "Status",
                     dataIndex: 'status'
                 }]
+        } 
+    },
+    listeners: {
+        cellclick: function (view, cell, cellIndex, record, row, rowIndex, e) {
+            var linkClicked = (e.target.tagName == 'A');
+            if (linkClicked) {
+                alert('id = ' + record.data.id); //.get('id')
+            }
         }
     },
     constructor: function (config) {

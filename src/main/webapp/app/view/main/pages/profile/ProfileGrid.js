@@ -7,6 +7,15 @@ Ext.define('DemoExtJs.view.main.pages.profile.ProfileGrid', {
     requires: [
         'Ext.selection.CheckboxModel'
     ],
+    header: {
+        items: [
+            {
+                align: 'left',
+                xtype: 'button',
+                cls: 'deleteSelectBtn'
+            }
+        ]
+    },
     config: {
         store: 'DemoExtJs.store.ProfileStore',
         columns: {
@@ -43,7 +52,7 @@ Ext.define('DemoExtJs.view.main.pages.profile.ProfileGrid', {
                         Ext.defer(function () {
                             Ext.widget('button', {
                                 renderTo: id,
-                                cls:'userDetailsButton',
+                                cls: 'userDetailsButton',
                                 handler: function () {
                                     Ext.Msg.alert("Hello World")
                                 }

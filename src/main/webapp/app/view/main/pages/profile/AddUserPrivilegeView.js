@@ -34,7 +34,7 @@ Ext.define('DemoExtJs.view.main.pages.profile.AddUserPrivilegeView', {
         },
         {
             html: '<h3 style="font-weight: bold;font-size: 14px;margin: 5px 0;color: #0066cc;padding:10px 20px 0px 20px">Privileges</h3>' +
-                    '<hr> '
+                   '<hr style="margin:0px 20px">'
         },
         {
             items: [

@@ -1,7 +1,7 @@
 Ext.define('DemoExtJs.model.DisputeHistoryModel', {
     extend: 'DemoExtJs.base.BaseModel',
     fields: [
-        { name: 'Id', type: 'int', defaultValue: 0 },
+        { name: 'id', type: 'int', defaultValue: 0 },
         { name: 'disputeDate', type: 'date' },
         { name: 'referenceNumber', type: 'string' },
         { name: 'accountName', type: 'string' },

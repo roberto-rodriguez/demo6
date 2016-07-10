@@ -3,7 +3,7 @@ Ext.define('DemoExtJs.view.main.pages.profile.AddPrivilegeGrid', {
     alias: 'widget.addPrivilegeGrid',
     frame: true,
     collapsible: true,
-    height: 280,
+    height: 290,
     style: 'margin-left:2%;margin-top:10px',
     requires: [
         'DemoExtJs.view.main.pages.profile.AddPrivilegeWindow'
