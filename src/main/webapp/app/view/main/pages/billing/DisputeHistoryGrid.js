@@ -24,7 +24,8 @@ Ext.define('DemoExtJs.view.main.pages.billing.DisputeHistoryGrid', {
                     align: 'center',
                     dataIndex: 'referenceNumber',
                     renderer: function (value) {
-                        return '<a href="#"><img src="https://apptest.fpl.com/fibernet/image/common/icon_pdf.gif"></a>';
+                        return '<b><a href="#" style="color:#6698FF">' + value + '</a></b>';
+//                        return '<a href="#"><img src="https://apptest.fpl.com/fibernet/image/common/icon_pdf.gif"></a>';
                     }
                 },
                 {

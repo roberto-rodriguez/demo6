@@ -38,7 +38,7 @@ public class ProfileController {
             @RequestParam(value = "firstName", required = false) String firstName) {
         Map result = new HashMap();
         
-        List<Profile> filteredList = getProfileList(page, start, limit, userId, lastName, firstName);
+        List<Profile> filteredList = getProfileList(userId, lastName, firstName);
          List<Profile> res = new ArrayList<>();
         
          for (int i = start; (i < (start + limit)) && (i < filteredList.size()); i++) {
@@ -46,12 +46,13 @@ public class ProfileController {
         }
         
         result.put("ProfileList", res );
+        result.put("page", page );
         result.put("TotalCount", filteredList.size());
         return result;
     }
 
     //---------
-    public static List<Profile> getProfileList(Integer page, Integer start, Integer limit, String userId, String lastName, String firstName) {
+    public static List<Profile> getProfileList( String userId, String lastName, String firstName) {
    
         generateOrCreateProfileList();
 
@@ -105,16 +106,13 @@ class Profile {
     }
 
     public boolean filter(String userId, String firstName, String lastName) {
-        if(userId != null && !this.userId.contains(userId)){
-            System.out.println("Comparing " + userId);
+        if(userId != null && !this.userId.contains(userId)){ 
             return false;
         }
-        if(firstName != null && !this.firstName.contains(firstName)){
-            System.out.println("Comparing " + firstName);
+        if(firstName != null && !this.firstName.contains(firstName)){ 
             return false;
         }
-        if(lastName != null && !this.lastName.contains(lastName)){
-            System.out.println("Comparing " + lastName);
+        if(lastName != null && !this.lastName.contains(lastName)){ 
             return false;
         }
         return true;

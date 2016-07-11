@@ -26,9 +26,9 @@ Ext.define('DemoExtJs.view.main.MainCardView', {
         flex: 1
     },
     items: [
-//        {
-//            xtype: 'accountView'  //0
-//        },
+        {
+            xtype: 'accountView'  //0
+        },
         {
             xtype: 'profileView' //1
         },

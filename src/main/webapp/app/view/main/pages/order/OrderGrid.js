@@ -3,35 +3,43 @@ Ext.define('DemoExtJs.view.main.pages.order.OrderGrid', {
     alias: 'widget.orderGrid',
     frame: true,
     collapsible: true,
+    height: 335,
     style: 'margin-left:0px;margin-top:20px',
+    requires: [
+        'Ext.ux.grid.GridFilter'
+    ],
     config: {
         store: 'DemoExtJs.store.OrderStore',
         columns: {
             defaults: {
                 width: '10%',
+                filter: true
             },
             items: [{
                     text: "Id",
                     dataIndex: 'id',
-                    hidden: true
+                    hidden: true,
+                    filter: false
                 },
                 {
                     text: "PD",
                     width: '4%',
                     dataIndex: 'pd',
-                    align: 'center', 
+                    align: 'center',
                     renderer: function (value) {
                         return '<a href="#"><img src=/resources/images/icon_pdf.gif></a>';
-                    }
+                    },
+                    filter: false
                 },
                 {
                     text: "Modify",
                     width: '5%',
-                    dataIndex: 'modify', 
-                    align: 'center', 
+                    dataIndex: 'modify',
+                    align: 'center',
                     renderer: function (value) {
                         return '<a href="#"><img src=/resources/images/icon_pencil.png></a>';
-                    }
+                    },
+                    filter: false
                 },
                 {
                     text: "Ref#",
@@ -42,7 +50,7 @@ Ext.define('DemoExtJs.view.main.pages.order.OrderGrid', {
                 {
                     text: "Status",
                     width: '11%',
-                    dataIndex: 'status', 
+                    dataIndex: 'status',
                     renderer: function (value) {
                         return '<a href="#" style="color:black">' + value + '</a>';
                     }
@@ -70,8 +78,8 @@ Ext.define('DemoExtJs.view.main.pages.order.OrderGrid', {
                 {
                     text: "Date",
                     dataIndex: 'date',
-                     xtype: 'datecolumn', 
-                     format:'m-d-Y'
+                    xtype: 'datecolumn',
+                    format: 'm-d-Y'
                 },
                 {
                     text: "Submited By",
@@ -87,5 +95,11 @@ Ext.define('DemoExtJs.view.main.pages.order.OrderGrid', {
     constructor: function (config) {
         this.initConfig(config);
         return this.callParent(arguments);
-    }
+    },
+        initComponent: function () {
+        var me = this; 
+        
+        this.callParent(arguments);
+    },
+    plugins: [{ptype: "gridFilter"}]
 });

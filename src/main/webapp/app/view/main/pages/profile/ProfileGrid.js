@@ -5,8 +5,8 @@ Ext.define('DemoExtJs.view.main.pages.profile.ProfileGrid', {
     collapsible: true,
     style: 'margin-left:2%;margin-top:5px',
     requires: [
-        'Ext.selection.CheckboxModel',
-        'DemoExtJs.component.plugin.GridFilter'
+//        'Ext.selection.CheckboxModel',
+        'Ext.ux.grid.GridFilter'
     ],
     header: {
         items: [
@@ -83,11 +83,6 @@ Ext.define('DemoExtJs.view.main.pages.profile.ProfileGrid', {
         var me = this;
         me.initConfig(config);
         me.callParent(arguments);
-    },
-        initComponent: function () {
-        var me = this; 
-        
-        this.callParent(arguments);
-    },
+    }, 
     plugins:[{ptype:"gridFilter"}]
 });
