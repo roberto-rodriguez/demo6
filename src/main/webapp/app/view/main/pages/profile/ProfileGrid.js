@@ -5,7 +5,8 @@ Ext.define('DemoExtJs.view.main.pages.profile.ProfileGrid', {
     collapsible: true,
     style: 'margin-left:2%;margin-top:5px',
     requires: [
-        'Ext.selection.CheckboxModel'
+        'Ext.selection.CheckboxModel',
+        'DemoExtJs.component.plugin.GridFilter'
     ],
     header: {
         items: [
@@ -18,11 +19,13 @@ Ext.define('DemoExtJs.view.main.pages.profile.ProfileGrid', {
     },
     config: {
         store: 'DemoExtJs.store.ProfileStore',
+        filter: true,
         columns: {
             defaults: {
-                width: '20%',
+                width: '20%'
             },
             items: [{
+                    width: '0%',
                     text: "Id",
                     dataIndex: 'id',
                     hidden: true
@@ -32,22 +35,24 @@ Ext.define('DemoExtJs.view.main.pages.profile.ProfileGrid', {
                     dataIndex: 'userId',
                     width: '36%',
                     align: 'center',
-                    sortable: true
+                    sortable: true,
+                    filter: true
                 },
                 {
                     text: "Last Name",
-                    dataIndex: 'lastName'
+                    dataIndex: 'lastName',
+                    filter: true
                 },
                 {
                     text: "First Name",
                     dataIndex: 'firstName',
-                    align: 'center'
+                    align: 'center',
+                    filter: true
                 },
                 {
                     text: "View & Edit Details",
                     align: 'center',
                     renderer: function (val, meta, rec) {
-                        // generate unique id for an element
                         var id = Ext.id();
                         Ext.defer(function () {
                             Ext.widget('button', {
@@ -78,6 +83,11 @@ Ext.define('DemoExtJs.view.main.pages.profile.ProfileGrid', {
         var me = this;
         me.initConfig(config);
         me.callParent(arguments);
-
-    }
+    },
+        initComponent: function () {
+        var me = this; 
+        
+        this.callParent(arguments);
+    },
+    plugins:[{ptype:"gridFilter"}]
 });

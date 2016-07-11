@@ -5,6 +5,7 @@
  */
 package common.web.api;
 
+import common.util.Utils;
 import java.text.DateFormat;
 import java.text.SimpleDateFormat;
 import java.util.ArrayList;
@@ -24,50 +25,71 @@ import org.springframework.web.bind.annotation.RestController;
 @RestController
 @RequestMapping(value = "/api/profile", method = RequestMethod.GET)
 public class ProfileController {
-     
-    private static List<Profile> profileList = null;
-    
-     @RequestMapping(value = "/list", method = RequestMethod.GET) //, consumes = "application/json"
-    public Map billingHistory(@RequestParam("page") Integer page,@RequestParam("start") Integer start,@RequestParam("limit") Integer limit) {
-        Map result = new HashMap();
-       result.put("ProfileList", getProfileList(page,  start,  limit));
-       result.put("TotalCount", profileList.size());
-       return result;
-    }
-    
-    
-    
-    //---------
 
-    public static List<Profile> getProfileList(Integer page, Integer start, Integer limit) {
-       List<Profile> res = new ArrayList<>();
-       generateOrCreateProfileList();
-        for (int i = start; (i < (start + limit)) && (i < profileList.size()); i++) {
-            res.add(profileList.get(i));
+    private static List<Profile> profileList = null;
+
+    @RequestMapping(value = "/list", method = RequestMethod.GET) //, consumes = "application/json"
+    public Map billingHistory(
+            @RequestParam("page") Integer page,
+            @RequestParam("start") Integer start,
+            @RequestParam("limit") Integer limit,
+            @RequestParam(value = "userId", required = false) String userId,
+            @RequestParam(value = "lastName", required = false) String lastName,
+            @RequestParam(value = "firstName", required = false) String firstName) {
+        Map result = new HashMap();
+        
+        List<Profile> filteredList = getProfileList(page, start, limit, userId, lastName, firstName);
+         List<Profile> res = new ArrayList<>();
+        
+         for (int i = start; (i < (start + limit)) && (i < filteredList.size()); i++) {
+            res.add(filteredList.get(i));
         }
-        return res;
+        
+        result.put("ProfileList", res );
+        result.put("TotalCount", filteredList.size());
+        return result;
     }
-     
-    
+
+    //---------
+    public static List<Profile> getProfileList(Integer page, Integer start, Integer limit, String userId, String lastName, String firstName) {
+   
+        generateOrCreateProfileList();
+
+        List<Profile> filteredList = new ArrayList<>();
+
+        if (userId == null && lastName == null && firstName == null) {
+            filteredList = profileList;
+        } else {
+            for (Profile p : profileList) {
+                if(p.filter(userId, firstName, lastName)){
+                    filteredList.add(p);
+                }
+            }
+        }
+
+       
+        return filteredList;
+    }
+
     public static void generateOrCreateProfileList() {
-        if(profileList == null){
+        if (profileList == null) {
             profileList = generateProfileList();
         }
     }
-    
-    
-    private static List<Profile> generateProfileList(){
+
+    private static List<Profile> generateProfileList() {
         List<Profile> list = new ArrayList<>();
-        
+
         for (int i = 0; i < 50; i++) {
             list.add(new Profile(i));
         }
         return list;
-    } 
+    }
 
 }
 
-class Profile{
+class Profile {
+
     private Integer id;
     private boolean check;
     private String userId;
@@ -77,10 +99,26 @@ class Profile{
     public Profile(Integer id) {
         this.id = id;
         this.check = ((id % 2) == 0);
-        this.userId = "aalonso" + id + "@woundtech.net";
-        this.firstName = "Alejandro";
-        this.lastName = "Alonso";
-         }
+        this.userId = Utils.getEmail(id);
+        this.firstName = Utils.getName(id);
+        this.lastName = Utils.getLastName(id);
+    }
+
+    public boolean filter(String userId, String firstName, String lastName) {
+        if(userId != null && !this.userId.contains(userId)){
+            System.out.println("Comparing " + userId);
+            return false;
+        }
+        if(firstName != null && !this.firstName.contains(firstName)){
+            System.out.println("Comparing " + firstName);
+            return false;
+        }
+        if(lastName != null && !this.lastName.contains(lastName)){
+            System.out.println("Comparing " + lastName);
+            return false;
+        }
+        return true;
+    }
 
     /**
      * @return the id
@@ -152,5 +190,5 @@ class Profile{
         this.check = check;
     }
 
-    
+   
 }
